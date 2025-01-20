@@ -63,7 +63,7 @@ const WorkSection = () => {
     <>
       <div className="w-full flex flex-col gap-4 py-10">
         <h2 className="text-3xl">Selected Work</h2>
-        <div className="w-full flex flex-row gap-4 ">
+        <div className="w-full flex flex-wrap gap-10 sm:flex-wrap md:gap-0">
           <Card 
             id="manisgrafika"
             title="Manis Grafika"
