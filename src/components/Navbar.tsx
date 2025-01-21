@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import AvailabilityBadge from "./AvailibilityBadge";
+import WaveLink from "./WaveLink";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,8 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-white">
       <div className="flex items-center justify-between px-4 py-4 md:px-10">
         {/* Brand */}
-        <h1 className={`text-xl font-bold z-50 ${isOpen ? "text-white" : "text-black"}`}>
-          <Link to="/">Artena.</Link>
+        <h1 className={`text-xl font-bold z-50 hover-wave ${isOpen ? "text-white" : "text-black"}`}>
+          <WaveLink to="/">Artena.</WaveLink>
         </h1>
 
         {/* Burger Menu */}
@@ -55,20 +56,20 @@ const Navbar: React.FC = () => {
           {/* Availability Badge */}
           <AvailabilityBadge location="Surakarta, Indonesia" />
           <ul className="flex space-x-6">
-            <li>
-              <Link to="/" className="hover:text-blue-500 transition">
+            <li className="hover-wave">
+              <WaveLink to="/">
                 home
-              </Link>
+              </WaveLink>
             </li>
-            <li>
-              <Link to="/work" className="hover:text-blue-500 transition">
+            <li className="hover-wave">
+              <WaveLink to="/work">
                 work
-              </Link>
+              </WaveLink>
             </li>
-            <li>
-              <Link to="/about" className="hover:text-blue-500 transition">
+            <li className="hover-wave">
+              <WaveLink to="/about">
                 about
-              </Link>
+              </WaveLink>
             </li>
           </ul>
         </div>

@@ -5,6 +5,7 @@ import { SiLinkedin } from "react-icons/si";
 import { SiDribbble } from "react-icons/si";
 
 const Homepage: React.FC = () => {
+  
   return (
     <div className="w-full px-4 md:px-10">
       <HeroSection />
