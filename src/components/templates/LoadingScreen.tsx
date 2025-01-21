@@ -32,7 +32,7 @@ const LoadingScreen: React.FC = () => {
           style={{ pointerEvents: 'auto' }}
         >
           <motion.span
-            className="text-white text-5xl font-bold"
+            className="text-white text-5xl font-bold md:text-7xl"
             initial={{ opacity: 1 }}
             animate={{ opacity: [1], transition: { repeat: Infinity, duration: 0.5 } }} // Blink effect
           >

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import AvailabilityBadge from "./AvailibilityBadge";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,6 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  // Variants for motion animations
   const menuVariants = {
     open: {
       opacity: 1,
@@ -24,66 +24,91 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full">
-      <div className="flex items-center justify-between px-4 py-4">
-        {/* Logo */}
+    <nav className="fixed top-0 left-0 w-full bg-white">
+      <div className="flex items-center justify-between px-4 py-4 md:px-10">
+        {/* Brand */}
         <h1 className={`text-xl font-bold z-50 ${isOpen ? "text-white" : "text-black"}`}>
           <Link to="/">Artena.</Link>
         </h1>
 
-        {/* Hamburger Icon - Changes to 'X' when open */}
-        <div
-          className="md:hidden cursor-pointer z-50"
-          onClick={toggleMenu}
-        >
-          <div className={`w-6 h-[2px] ${isOpen ? "bg-white" : "bg-black"} mb-1 transition-transform duration-500 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`} />
-          <div className={`w-6 h-[2px] ${isOpen ? "bg-white" : "bg-black"} transition-opacity duration-300 ${isOpen ? "opacity-0" : "opacity-100"}`} />
-          <div className={`w-6 h-[2px] ${isOpen ? "bg-white" : "bg-black"} mt-1 transition-transform duration-500 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`} />
+        {/* Burger Menu */}
+        <div className="md:hidden cursor-pointer z-50" onClick={toggleMenu}>
+          <div
+            className={`w-6 h-[2px] ${isOpen ? "bg-white" : "bg-black"} mb-1 transition-transform duration-500 ${
+              isOpen ? "rotate-45 translate-y-1.5" : ""
+            }`}
+          />
+          <div
+            className={`w-6 h-[2px] ${isOpen ? "bg-white" : "bg-black"} transition-opacity duration-300 ${
+              isOpen ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          <div
+            className={`w-6 h-[2px] ${isOpen ? "bg-white" : "bg-black"} mt-1 transition-transform duration-500 ${
+              isOpen ? "-rotate-45 -translate-y-1.5" : ""
+            }`}
+          />
         </div>
 
-        {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-6">
-          <li>
-            <Link to="/work" className="hover:text-blue-500 transition">
-              Work
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="hover:text-blue-500 transition">
-              About
-            </Link>
-          </li>
-        </ul>
+        {/* Navbar Links & Badge */}
+        <div className="hidden md:flex items-center space-x-6">
+          {/* Availability Badge */}
+          <AvailabilityBadge location="Surakarta, Indonesia" />
+          <ul className="flex space-x-6">
+            <li>
+              <Link to="/" className="hover:text-blue-500 transition">
+                home
+              </Link>
+            </li>
+            <li>
+              <Link to="/work" className="hover:text-blue-500 transition">
+                work
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-blue-500 transition">
+                about
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       <motion.div
-        className="absolute top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center md:hidden"
+        className="absolute top-0 left-0 w-full h-screen pt-60 bg-black flex flex-col items-start justify-between md:hidden"
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={menuVariants}
       >
-        {/* Mobile Links */}
-        <ul className="space-y-8 text-xl font-medium text-white text-center">
+        <ul className="space-y-8 text-3xl font-medium text-white px-4">
           <li>
-            <Link
-              to="/work"
-              className="hover:text-blue-500 transition"
-              onClick={toggleMenu}
-            >
-              Work
+            <Link to="/" className="hover:text-blue-500 transition" onClick={toggleMenu}>
+              home
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-              className="hover:text-blue-500 transition"
-              onClick={toggleMenu}
-            >
-              About
+            <Link to="/work" className="hover:text-blue-500 transition" onClick={toggleMenu}>
+              work
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-blue-500 transition" onClick={toggleMenu}>
+              about
             </Link>
           </li>
         </ul>
+        <div className="w-full flex flex-row gap-4 justify-between text-white border-t-2 border-gray-800 px-4 py-4">
+          <a href="http://instagram.com/artenanagara" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+          <a href="http://dribbble.com/artenanagara" target="_blank" rel="noopener noreferrer">
+            Dribbble
+          </a>
+          <a href="http://linkedin.com/in/artenanagara" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </div>
       </motion.div>
     </nav>
   );
