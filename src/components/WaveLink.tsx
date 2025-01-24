@@ -14,9 +14,11 @@ const WaveLink: React.FC<WaveLinkProps> = ({ to, children }) => {
     : children;
 
   return (
-    <Link to={to} className="wave-link">
-      {wrappedChildren}
-    </Link>
+    <>
+      <Link to={to} className="wave-link">
+        {wrappedChildren}
+      </Link>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import AvailabilityBadge from "./AvailibilityBadge";
@@ -10,6 +10,27 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+    const handleScroll = () => {
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const navElement = document.querySelector("nav");
+      if (currentScrollTop > lastScrollTop) {
+        navElement?.classList.add("hidden");
+        navElement?.classList.remove("visible");
+      } else {
+        navElement?.classList.remove("hidden");
+        navElement?.classList.add("visible");
+      }
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const menuVariants = {
     open: {
@@ -29,7 +50,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center justify-between px-4 py-4 md:px-10">
         {/* Brand */}
         <h1 className={`text-xl font-bold z-50 hover-wave ${isOpen ? "text-white" : "text-black"}`}>
-          <WaveLink to="/">Artena.</WaveLink>
+          <WaveLink to="/">artena.</WaveLink>
         </h1>
 
         {/* Burger Menu */}

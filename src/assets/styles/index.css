@@ -7,13 +7,22 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(50%);
+      transform: translateY(-20%);
     }
   }
   
  .hover-wave:hover .letter {
     display: inline-block;
     animation: wave 0.8s ease-in-out;
-    color: #800080;
+    color: #FFEB00;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    color: #fff;
+    background: #FFEB00;
   }
   

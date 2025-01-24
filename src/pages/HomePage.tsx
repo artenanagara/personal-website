@@ -7,7 +7,7 @@ import { SiDribbble } from "react-icons/si";
 const Homepage: React.FC = () => {
   
   return (
-    <div className="w-full px-4 md:px-10">
+      <div className="w-full px-4 bg-white md:px-10 ">
       <HeroSection />
       <AboutSection />
       <WorkSection />
@@ -76,7 +76,7 @@ const AboutSection = () => {
 
 const WorkSection = () => {
   return (
-    <div className="w-full flex flex-col gap-4 py-10">
+    <div className="w-full flex flex-col gap-4 py-10 ">
       <h2 className="text-3xl">selected Work</h2>
       <div className="w-full flex flex-wrap gap-10 sm:flex-wrap md:gap-0">
         <Card 
