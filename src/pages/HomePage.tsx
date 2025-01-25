@@ -51,7 +51,7 @@ const HeroSection = () => {
 const AboutSection = () => {
   return (
     <div className="w-full py-10 flex flex-col gap-4 md:py-40">
-      <h2 className="text-3xl md:text-5xl">about Me</h2>
+      <h2 className="text-3xl md:text-5xl">about me</h2>
       <div className="w-full flex flex-col gap-4 md:flex-row md:gap-4">
         <div className="w-full flex flex-col gap-1 md:w-1/3">
           <p className="text-base font-light">
@@ -77,7 +77,7 @@ const AboutSection = () => {
 const WorkSection = () => {
   return (
     <div className="w-full flex flex-col gap-4 py-10 ">
-      <h2 className="text-3xl">selected Work</h2>
+      <h2 className="text-3xl">selected work</h2>
       <div className="w-full flex flex-wrap gap-10 sm:flex-wrap md:gap-0">
         <Card 
           id="manisgrafika"
