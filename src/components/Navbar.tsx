@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import AvailabilityBadge from "./AvailibilityBadge";
-import WaveLink from "./WaveLink";
+import WaveLink from "./animations/WaveLink";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,26 +11,6 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    let lastScrollTop = 0;
-    const handleScroll = () => {
-      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const navElement = document.querySelector("nav");
-      if (currentScrollTop > lastScrollTop) {
-        navElement?.classList.add("hidden");
-        navElement?.classList.remove("visible");
-      } else {
-        navElement?.classList.remove("hidden");
-        navElement?.classList.add("visible");
-      }
-      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const menuVariants = {
     open: {
@@ -46,7 +26,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white">
+    <nav className="absolute z-10 top-0 left-0 w-full">
       <div className="flex items-center justify-between px-4 py-4 md:px-10">
         {/* Brand */}
         <h1 className={`text-xl font-bold z-50 hover-wave ${isOpen ? "text-white" : "text-black"}`}>
@@ -105,17 +85,17 @@ const Navbar: React.FC = () => {
       >
         <ul className="space-y-8 text-3xl font-medium text-white px-4">
           <li>
-            <Link to="/" className="hover:text-blue-500 transition" onClick={toggleMenu}>
+            <Link to="/" className="hover:text-[#FFEB00] transition" onClick={toggleMenu}>
               home
             </Link>
           </li>
           <li>
-            <Link to="/work" className="hover:text-blue-500 transition" onClick={toggleMenu}>
+            <Link to="/work" className="hover:text-[#FFEB00] transition" onClick={toggleMenu}>
               work
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-blue-500 transition" onClick={toggleMenu}>
+            <Link to="/about" className="hover:text-[#FFEB00] transition" onClick={toggleMenu}>
               about
             </Link>
           </li>

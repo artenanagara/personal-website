@@ -5,7 +5,7 @@ interface JerkyScrollProps {
   snapIncrement?: number;  
 }  
   
-const JerkyScroll: React.FC<JerkyScrollProps> = ({ children, snapIncrement = 30 }) => {  
+const JerkyScroll: React.FC<JerkyScrollProps> = ({ children, snapIncrement = 5 }) => {  
   const scrollContainerRef = useRef<HTMLDivElement>(null);  
   
   useEffect(() => {  

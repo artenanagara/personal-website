@@ -17,12 +17,18 @@
     color: #FFEB00;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+}
+
   html {
     scroll-behavior: smooth;
+    overflow: hidden;
   }
 
   ::selection {
     color: #fff;
     background: #FFEB00;
   }
+  
   
