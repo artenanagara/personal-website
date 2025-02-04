@@ -1,10 +1,11 @@
 import React from "react";
+import ErrorPage from "./ErrorPage";
 
 const AboutPage: React.FC = () => {
     return (
-        <div>
-        <h1>About Page</h1>
-        </div>
+        <>
+            <ErrorPage />
+        </>
     );
 };
 

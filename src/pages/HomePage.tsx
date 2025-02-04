@@ -4,10 +4,12 @@ import { SiInstagram } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 import { SiDribbble } from "react-icons/si";
 
+import mockupMG from "../assets/images/manisgrafika/mockup.png"
+
 const Homepage: React.FC = () => {
   
   return (
-      <div className="w-full px-4 bg-white md:px-10 ">
+      <div className="w-full h-max-screen px-4 bg-white md:px-10 ">
       <HeroSection />
       <AboutSection />
       <WorkSection />
@@ -52,7 +54,7 @@ const AboutSection = () => {
   return (
     <div className="w-full py-10 flex flex-col gap-4 md:py-40">
       <h2 className="text-3xl md:text-5xl">about me</h2>
-      <div className="w-full flex flex-col gap-4 md:flex-row md:gap-4">
+      <div className="w-full flex flex-col gap-4 md:flex-row md:gap-16">
         <div className="w-full flex flex-col gap-1 md:w-1/3">
           <p className="text-base font-light">
             I'm a freelance web designer and co-founder of Cicle Studio, a studio focused on creating tailor-made websites.
@@ -76,29 +78,15 @@ const AboutSection = () => {
 
 const WorkSection = () => {
   return (
-    <div className="w-full flex flex-col gap-4 py-10 ">
-      <h2 className="text-3xl">selected work</h2>
+    <div className="w-full h-max-screen flex flex-col gap-4 py-10">
+      <h2 className="text-3xl md:text-5xl">selected work</h2>
       <div className="w-full flex flex-wrap gap-10 sm:flex-wrap md:gap-0">
         <Card 
           id="manisgrafika"
           title="Manis Grafika"
-          category="Web Design"
+          category="UI/UX Design, Wordpress"
           defaultImage="https://manisgrafika.id/wp-content/uploads/2024/10/DSC06248_CONVERT-scaled.webp"
-          hoverImage="https://cdn.dribbble.com/userupload/18452082/file/original-26b222473c0067fe137daf3806cf5356.jpg?resize=1024x768&vertical=center"
-        />
-        <Card 
-          id="greenprobo"
-          title="Greenprobolinggo"
-          category="Web Design"
-          defaultImage="https://manisgrafika.id/wp-content/uploads/2024/10/DSC06248_CONVERT-scaled.webp"
-          hoverImage="https://cdn.dribbble.com/userupload/18452082/file/original-26b222473c0067fe137daf3806cf5356.jpg?resize=1024x768&vertical=center"
-        />
-        <Card 
-          id="manisgrafika"
-          title="The Investor"
-          category="Web Design"
-          defaultImage="https://manisgrafika.id/wp-content/uploads/2024/10/DSC06248_CONVERT-scaled.webp"
-          hoverImage="https://cdn.dribbble.com/userupload/18452082/file/original-26b222473c0067fe137daf3806cf5356.jpg?resize=1024x768&vertical=center"
+          hoverImage={mockupMG}
         />
       </div>
     </div>

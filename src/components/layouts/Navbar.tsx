@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import AvailabilityBadge from "./AvailibilityBadge";
-import WaveLink from "./animations/WaveLink";
+import AvailabilityBadge from "../AvailibilityBadge";
+import WaveLink from "../animations/WaveLink";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

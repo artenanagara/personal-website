@@ -23,7 +23,7 @@
 
   html {
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: none;
   }
 
   ::selection {

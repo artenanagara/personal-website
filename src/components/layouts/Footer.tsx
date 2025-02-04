@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <div className="w-full h-screen px-4 pt-16 pb-4 flex flex-col gap-10 bg-black text-white justify-end md:px-10">
+    <div className="relative z-1 w-full h-screen px-4 pt-16 pb-4 flex flex-col gap-10 bg-black text-white justify-end md:px-10">
       <div className="flex flex-col gap-4">
         <h1 className="text-5xl font-semibold md:text-9xl">Let's create something cool</h1>
         <a href="mailto:artenanagara22@gmail.com" className="w-1/3 font-medium underline text-xl md:text-3xl hover:text-[#FFEB00] hover:scale-75 transition duration-700 ease-in-out">

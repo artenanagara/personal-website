@@ -1,0 +1,154 @@
+{
+    "caseStudies": [
+        {
+            "id": "manisgrafika",
+            "title": "The Redesign of Manis Grafika’s Website for a Minimalist and Luxurious Experience",
+            "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*UQOpVpD2FXE0rCHRPhbkiQ.png",
+            "scope": "UI/UX Design,Wordpress",
+            "timeline": "Oct - Dec 2020",
+            "about_company": {
+              "company_name": "Manis Grafika",
+              "description": "Manis Grafika specializes in producing elegant, high-quality prayer books. Renowned for its commitment to beauty and tradition, Manis Grafika combines artistic values with high production quality.",
+              "website": "manisgrafika.id",
+              "url": "https://manisgrafika.id"
+        
+            },
+            "overview": {
+              "about_project": {
+              "description": "This project aims to redesign Manis Grafika's website to reflect the minimalist and luxurious aesthetic characteristic of their products. The new website is expected to enhance not only aesthetics but also functionality and user experience.",
+              "image": null
+              },
+              "challenge": {
+              "description": "Before the redesign, Manis Grafika's website faced several UI/UX challenges, including complicated navigation and confusing layouts that made it difficult for visitors to find relevant information. Additionally, the design was inconsistent with the brand identity, reducing the effectiveness of product value communication.",
+              "image": null
+              },
+              "solution": {
+              "description": "The design team decided to adopt a minimalist approach with a curated color palette and clean layout to highlight high-quality products. The website's functionality was also enhanced to facilitate easier navigation and user interaction.",
+              "image": "https://i.postimg.cc/VLDpVZjT/style-guide-1.png"
+              }
+            },
+            "process": {
+              "gathering_requirements": "In the initial phase, I met with the owner of Manis Grafika to deeply understand their vision. They desired a minimalist yet elegant design that could depict quality and luxury. This vision was realized through the use of a curated color palette, simple yet sophisticated design, and each page designed to feel timeless and reflect the luxury of their products.",
+              "site_map": {
+                "description": "The designed site map reflects an efficient and intuitive structure, making it easy for users to navigate the website.",
+                "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*rW431SZFbqXdCw_Q4mEe4g.png "
+              },
+              "wireframe": {
+                "description": "Early wireframes show the basic layout before visual elements were added, focusing on space usage and user flow.",
+                "image": null
+              }
+            },
+            "result": {
+              "description": "The website redesign was successful in creating a more modern and luxurious look, enhancing user satisfaction and strengthening Manis Grafika's visual identity in the market. The new site is easier to navigate and more effective in showcasing products.",
+              "mockup": "https://i.postimg.cc/9F2RtVXL/96be545d935-1.png",
+              "images": [
+                "https://i.postimg.cc/K8NHvZjw/home.png",
+                "https://i.postimg.cc/7LZQ5pT6/product.png",
+                "https://i.postimg.cc/MpxLSc61/detail.png",
+                "https://i.postimg.cc/fbqqmBxv/about.png"
+              ]
+            },
+            "live_site": "https://manisgrafika.id"
+          },
+          {
+            "id": "theinvestor",
+            "title": "Transforming The Investor's Website for an Enhanced Investment Learning Experience",
+            "image": "https://theinvestor.id/assets/images/preview.png",
+            "scope": "UI/UX Design, Wordpress",
+            "timeline": "Mar - Apr 2024",
+            "about_company": {
+              "company_name": "The Investor",
+              "description": " The Investor is a dynamic learning platform designed to empower users with the knowledge and strategies needed to grow their investments confidently. By offering structured, accessible, and hassle-free learning materials, The Investor helps individuals navigate the complexities of investing anytime, anywhere.",
+              "website": "theinvestor.id",
+              "url": "http://theinvestor.id/"
+            },
+            "overview": {
+              "about_project": {
+                "description": "This project wasn't just a website redesign; it was a transformation. Our goal was to elevate The Investor's online presence, creating an intuitive and engaging experience that perfectly reflected their commitment to accessible investment education. We aimed to build a platform that not only provided valuable information but also inspired confidence and trust.",
+                "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*UQOpVpD2FXE0rCHRPhbkiQ.png"
+              },
+              "challenge": {
+                "description": "The Investor's previous website suffered from several critical UI/UX flaws. A cluttered layout, confusing navigation, and a lack of visual consistency created a frustrating experience for users. This resulted in low engagement and ultimately hindered the platform's ability to effectively deliver its educational mission.",
+                "image": null
+              },
+              "solution": {
+                "description": "Our design team implemented a strategic solution focused on creating a clean, modern, and highly structured interface. We streamlined navigation, making it effortless for users to find the learning resources they needed. A carefully curated color palette and sophisticated typography were chosen to enhance readability and project an image of professionalism and trustworthiness – essential qualities in the financial sector.",
+                "image": null
+              }
+            },
+            "process": {
+              "gathering_requirements": "The project began with extensive collaboration with The Investor's team. We conducted in-depth discussions to thoroughly understand their vision, objectives, and target audience. Key requirements included an intuitive interface, seamless responsiveness across all devices, and a professional aesthetic that resonated with the financial industry's standards of excellence.",
+              "site_map": {
+                "description": "The redesigned site map was meticulously crafted to simplify the user journey. We focused on creating a logical flow, ensuring that users could easily locate the investment learning resources they sought. This streamlined approach significantly improved navigation and overall user satisfaction.",
+                "image": "https://theinvestor.id/assets/images/sitemap.png"
+              },
+              "wireframe": {
+                "description": "Initial wireframes focused on user flow and content placement, ensuring a structured and logical layout before visual elements were introduced.",
+                "image": null
+              }
+            },
+            "result": {
+              "description": "The redesigned website has demonstrably improved user engagement and accessibility. Users now find it significantly easier to explore investment strategies and access valuable learning materials. The transformation has not only enhanced The Investor's brand presence but also significantly bolstered their credibility within the competitive investment education market. The platform is now a more effective tool for empowering users to achieve their financial goals.",
+              "images": [
+                "https://cdn.dribbble.com/userupload/18354779/file/original-e26398d1fd41ab55f73860112284517a.png?resize=752x&vertical=center",
+                "https://cdn.dribbble.com/userupload/18354779/file/original-e26398d1fd41ab55f73860112284517a.png?resize=752x&vertical=center",
+                "https://cdn.dribbble.com/userupload/18354779/file/original-e26398d1fd41ab55f73860112284517a.png?resize=752x&vertical=center",
+                "../assets/images/theinvestor/mockup.png"
+              ]
+            },
+            "mockup": "https://theinvestor.id/assets/images/mockup.png",
+            "live_site": "http://theinvestor.id/"
+          },
+          {
+            "id": "exmood",
+            "title": "Transforming The Investor's Website for an Enhanced Investment Learning Experience",
+            "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*Cmi8tqA_jqUnVefiYPAiaA.png",
+            "scope": "UI/UX Design",
+            "timeline": "May 2023 (3 Weeks)",
+            "about_company": {
+              "company_name": "Exmood Mobile App",
+              "description": " EXMOOD is an innovative mobile application designed to enhance users' mental health through a variety of engaging features. The app focuses on providing tools that users can easily utilize to monitor and improve their emotional well-being.",
+              "url": "http://theinvestor.id/"
+            },
+            "overview": {
+              "about_project": {
+                "description": "EXMOOD is a mobile-based application with a focus on improving mental health of users through features that can be utilized. EXMOOD equipped with several features such as a mood tracker to detect emotions through user facial expressions, meditation to practice controlling and regulating emotions, counseling to consult with experts in their fields, meditation, vent and counseling, as well as a journey containing a series of activities related to mental health. EXMOOD will provide the best experience for users to handle mental health well into an effective application that can be used by all groups.",
+                "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*UQOpVpD2FXE0rCHRPhbkiQ.png"
+              },
+              "problem": {
+                "description": "The case study in this project is the number of teenagers to adults who experience mental health disorders. With a fairly high index of mental health, it makes it a major problem in daily activities. So many incidents, namely the occurrence of suicide due to mental health disorders that greatly affect the quality of life and interfere with daily activities.",
+                "image": null
+              },
+              "goals": {
+                "description": "The purpose of this project is to provide a solution regarding mental health, which all people with mental health disorders can handle with one hand which is useful for reducing the occurrence of mental health disorders that can affect activities and even have a negative impact on themselves.",
+                "image": null
+              }
+            },
+            "process": {
+              "research": {
+                "description": "To do this, two methods are used, namely surveys and user interviews. The user criteria that we will use are male and female, aged 15 s.d. 25 years old, and has had mental health problems before. Surveys and interviews will be conducted based on the hypothesis that we have taken from each research question that has been made previously. For the survey based on the data obtained, there were 26 respondents. For user interview, Interviewed 2 person aged 21 and 20. both have mental health disorders that are quite alarming in their lives which greatly interfere with their quality of life. One of them even wanted to commit suicide because he couldn’t control his mind and had a mental health disorder that required serious treatment",
+                "image": "https://theinvestor.id/assets/images/sitemap.png"
+              },
+              "site_map": {
+                "description": "The redesigned site map was meticulously crafted to simplify the user journey. We focused on creating a logical flow, ensuring that users could easily locate the investment learning resources they sought. This streamlined approach significantly improved navigation and overall user satisfaction.",
+                "image": "https://theinvestor.id/assets/images/sitemap.png"
+              },
+              "wireframe": {
+                "description": "Initial wireframes focused on user flow and content placement, ensuring a structured and logical layout before visual elements were introduced.",
+                "image": null
+              }
+            },
+            "result": {
+              "description": "The redesigned website has demonstrably improved user engagement and accessibility. Users now find it significantly easier to explore investment strategies and access valuable learning materials. The transformation has not only enhanced The Investor's brand presence but also significantly bolstered their credibility within the competitive investment education market. The platform is now a more effective tool for empowering users to achieve their financial goals.",
+              "images": [
+                "https://cdn.dribbble.com/userupload/18354779/file/original-e26398d1fd41ab55f73860112284517a.png?resize=752x&vertical=center",
+                "https://cdn.dribbble.com/userupload/18354779/file/original-e26398d1fd41ab55f73860112284517a.png?resize=752x&vertical=center",
+                "https://cdn.dribbble.com/userupload/18354779/file/original-e26398d1fd41ab55f73860112284517a.png?resize=752x&vertical=center",
+                "../assets/images/theinvestor/mockup.png"
+              ]
+            },
+            "mockup": "https://theinvestor.id/assets/images/mockup.png",
+            "live_site": "http://theinvestor.id/"
+          }
+    ]
+}
