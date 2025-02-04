@@ -31,13 +31,13 @@ const HeroSection = () => {
           </h1>
         </div>
         <div className="flex flex-row gap-4 text-xl ">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/artenanagara" target="_blank" rel="noopener noreferrer">
             <SiInstagram />
           </a>
-          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://dribbble.com/artenanagara" target="_blank" rel="noopener noreferrer">
             <SiDribbble />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/artenanagara" target="_blank" rel="noopener noreferrer">
             <SiLinkedin />
           </a>
         </div>
@@ -59,7 +59,7 @@ const AboutSection = () => {
           <p className="text-base font-light">
             I'm a freelance web designer and co-founder of Cicle Studio, a studio focused on creating tailor-made websites.
           </p>
-          <a href="https://instagram.com" target="_blank" className="underline font-light hover:italic">
+          <a href="https://instagram.com/cicle.studio" target="_blank" className="underline font-light hover:italic">
             Discover Cicle Studio
           </a>
         </div>
