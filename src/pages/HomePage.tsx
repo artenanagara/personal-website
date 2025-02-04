@@ -5,6 +5,8 @@ import { SiLinkedin } from "react-icons/si";
 import { SiDribbble } from "react-icons/si";
 
 import mockupMG from "../assets/images/manisgrafika/mockup.png"
+import thumbnailTI from "../assets/images/theinvestor/thumbnail.jpg"
+import mockupTI from "../assets/images/theinvestor/mockup.png"
 
 const Homepage: React.FC = () => {
   
@@ -87,6 +89,13 @@ const WorkSection = () => {
           category="UI/UX Design, Wordpress"
           defaultImage="https://manisgrafika.id/wp-content/uploads/2024/10/DSC06248_CONVERT-scaled.webp"
           hoverImage={mockupMG}
+        />
+        <Card 
+          id="theinvestor"
+          title="The Investor"
+          category="UI/UX Design"
+          defaultImage={thumbnailTI}
+          hoverImage={mockupTI}
         />
       </div>
     </div>

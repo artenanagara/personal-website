@@ -36,7 +36,7 @@ const ZoomImage: React.FC<ZoomImageProps> = ({ src, alt, width = "auto", height 
                     <img
                         src={src}
                         alt={alt}
-                        className="max-w-full max-h-full md:max-w-xl md:max-h-screen rounded-lg shadow-lg transform scale-100 transition-transform"
+                        className="max-w-full max-h-full md:max-w-3xl md:max-h-screen rounded-lg shadow-lg transform scale-100 transition-transform"
                     />
                     <button
                         onClick={handleClose}

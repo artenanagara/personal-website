@@ -83,9 +83,9 @@ const Header: React.FC<{ caseStudy: CaseStudy }> = ({ caseStudy }) => (
         <h2>{caseStudy.about_company.company_name}</h2>
         <h1 className="text-2xl font-bold">{caseStudy.title}</h1>
       </div>
-      <div className="w-full flex flex-col gap-4 md:w-1/2 md:flex-row md:gap-10">
-        <p className="w-full text-gray-500">{caseStudy.about_company.description}</p>
-        <div className="w-full flex flex-col font-normal  gap-4 text-sm md:w-2/3 md:text-end">
+      <div className="w-full flex flex-col gap-4 md:flex-row md:gap-10">
+        <p className="w-full text-gray-500 md:pl-20">{caseStudy.about_company.description}</p>
+        <div className="w-full flex flex-col font-normal gap-4 text-sm md:w-2/3 md:text-end">
           <InfoItem label="Timeline" value={caseStudy.timeline} />
           <InfoItem label="Scope" value={caseStudy.scope} />
           <InfoItem label="Website" value={<a href={caseStudy.about_company.url} target="_blank" className="underline">{caseStudy.about_company.website}</a>} />
