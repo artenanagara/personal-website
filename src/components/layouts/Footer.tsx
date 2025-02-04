@@ -17,6 +17,12 @@ const Footer: React.FC = () => {
           <a href="http://dribbble.com/artenanagara" target="_blank" rel="noopener noreferrer" className='hover:text-[#FFEB00] hover:-translate-x-2  hover:scale-110 transition duration-700 ease-in-out'>Dribbble</a>
           <a href="http://linkedin.com/in/artenanagara" target="_blank" rel="noopener noreferrer" className='hover:text-[#FFEB00] hover:translate-x-2  hover:scale-110 transition duration-700 ease-in-out'>LinkedIn</a>
         </div>
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+          className="hover:text-[#FFEB00] hover:scale-110 transition duration-700 ease-in-out"
+        >
+          Scroll to Top
+        </button>
       </div>
     </div>
   );

@@ -5,10 +5,10 @@ const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Pindahkan scroll ke atas
-  }, [pathname]); // Jalankan efek setiap kali path berubah
+    window.scrollTo(0, 0);
+  }, [pathname]); 
 
-  return null; // Tidak perlu render apa pun
+  return null; 
 };
 
 export default ScrollToTop;
