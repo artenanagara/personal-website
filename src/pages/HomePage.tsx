@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import { SiInstagram } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 import { SiDribbble } from "react-icons/si";
+import ScrollingGallery from "../components/ScrollingGallery";
 
 import mockupMG from "../assets/images/manisgrafika/mockup.png"
 import thumbnailTI from "../assets/images/theinvestor/thumbnail.jpg"
@@ -15,6 +16,7 @@ const Homepage: React.FC = () => {
       <HeroSection />
       <AboutSection />
       <WorkSection />
+      <ScrollingGallery />
     </div>
   );
 }

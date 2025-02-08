@@ -24,7 +24,7 @@
               },
               "solution": {
               "description": "The design team decided to adopt a minimalist approach with a curated color palette and clean layout to highlight high-quality products. The website's functionality was also enhanced to facilitate easier navigation and user interaction.",
-              "image": "https://i.postimg.cc/VLDpVZjT/style-guide-1.png"
+              "image": "/src/assets/images/manisgrafika/styleguide.png"
               }
             },
             "process": {
@@ -36,7 +36,7 @@
             },
             "result": {
               "description": "The website redesign was successful in creating a more modern and luxurious look, enhancing user satisfaction and strengthening Manis Grafika's visual identity in the market. The new site is easier to navigate and more effective in showcasing products.",
-              "mockup": "https://i.postimg.cc/9F2RtVXL/96be545d935-1.png",
+              "mockup": "../assets/images/manisgrafika/mockup.png",
               "images": [
                 "https://i.postimg.cc/K8NHvZjw/home.png",
                 "https://i.postimg.cc/7LZQ5pT6/product.png",
