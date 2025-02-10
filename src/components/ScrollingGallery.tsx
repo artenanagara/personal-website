@@ -36,6 +36,7 @@ const ScrollingGallery = () => {
     };
 
     const handleMouseLeave = (event: React.MouseEvent) => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const currentPosition = event.clientX - slideRange;
       controls.start({
         x: [`currentPosition`, '0%'],
