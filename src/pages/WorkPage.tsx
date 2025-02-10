@@ -1,5 +1,9 @@
 import React from "react";
 import Card from "../components/Card";
+import CoverManisGrafika from "../assets/images/manisgrafika/mockup.png"
+import CoverTheInvestor from "../assets/images/theinvestor/thumbnail.jpg"
+import HoverTheInvestor from "../assets/images/theinvestor/mockup.png"
+import CoverProbolinggo from "../assets/images/greenprobolinggo/trash.jpg"
 
 const WorkPage: React.FC = () => {
   return (
@@ -12,25 +16,38 @@ const WorkPage: React.FC = () => {
 
 const HeaderSection = () => (
   <div className="w-full flex flex-col gap-4 border-b border-gray-300 pb-6 md:flex-row">
-    <h1 className="w-full text-3xl font-medium md:w-2/4">works</h1>
-    <p className="w-full md:w-1/3">
+    <h1 className="text-3xl font-medium md:w-2/4">Works</h1>
+    <p className="md:w-2/3">
       This portfolio showcases a selection of my work, representing the range and diversity of projects I've undertaken. While some pieces are not displayed due to client confidentiality, I believe these examples capture the breadth of what I can bring to each project.
     </p>
   </div>
 );
 
 const CardSection = () => (
-  <div className="w-full flex flex-wrap gap-10 sm:flex-wrap md:gap-0">
-    {Array(3).fill(null).map((_, index) => (
-      <Card
-        key={index}
-        id="manisgrafika"
-        title="Manis Grafika"
-        category="Web Design"
-        defaultImage="https://manisgrafika.id/wp-content/uploads/2024/10/DSC06248_CONVERT-scaled.webp"
-        hoverImage="https://cdn.dribbble.com/userupload/18452082/file/original-26b222473c0067fe137daf3806cf5356.jpg?resize=1024x768&vertical=center"
-      />
-    ))}
+  <div className="w-full flex flex-wrap gap-4 md:gap-0 md:py-4">
+    <Card 
+          id="manisgrafika"
+          title="Manis Grafika"
+          category="UI/UX Design, Wordpress"
+          defaultImage="https://manisgrafika.id/wp-content/uploads/2024/10/DSC06248_CONVERT-scaled.webp"
+          hoverImage={CoverManisGrafika}
+        />
+        <Card 
+          id="theinvestor"
+          title="The Investor"
+          category="UI/UX Design"
+          defaultImage={CoverTheInvestor}
+          hoverImage={HoverTheInvestor}
+          locked={true}
+        />
+         <Card 
+          id="greenprobolinggo"
+          title="Green Probolinggo"
+          category="UI/UX Design"
+          defaultImage={CoverProbolinggo}
+          hoverImage={HoverTheInvestor}
+          locked={true}
+        />
   </div>
 );
 

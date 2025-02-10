@@ -11,8 +11,8 @@ const App: React.FC = () => {
   return (  
     <Router>
       <LoadingScreen />
-      <Navbar />
       <ScrollToTop />
+      <Navbar />
       {routes}  
       <Footer />
     </Router>  

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 const images = [
@@ -14,12 +14,11 @@ const images = [
         src: 'https://cdn.dribbble.com/userupload/13127156/file/original-701489418a9b8ff84c3dc4ac5425bdfe.jpg?resize=752x564&vertical=center',
         url: 'https://dribbble.com/shots/23668006--Umah-Real-Estate-Landing-Page'
     }
-  // Tambahkan semua gambar yang ingin Anda tampilkan
 ];
 
 const ScrollingGallery = () => {
     const controls = useAnimation();
-    const slideRange = 2000;
+    const slideRange = 1000;
 
     React.useEffect(() => {
         const sequence = async () => {
@@ -39,15 +38,14 @@ const ScrollingGallery = () => {
     const handleMouseLeave = (event: React.MouseEvent) => {
       const currentPosition = event.clientX - slideRange;
       controls.start({
-        x: [`${currentPosition}px`, '0%'],
+        x: [`currentPosition`, '0%'],
         transition: { repeat: Infinity, duration: 20, ease: "linear" }
       });
-
-
+    };
 
     return (
-        <div className='w-full flex flex-col gap-8 pb-16'>
-            <h2 className='text-3xl md:text-5xl'>dribbble exploration</h2>
+        <div className='w-full h-full flex flex-col gap-8 pb-16 pt-20'>
+            <h2 className='text-4xl md:text-6xl'>another exploration</h2>
             <div className="overflow-hidden relative w-full">
                 <motion.div
                     className="flex cursor-pointer gap-8"

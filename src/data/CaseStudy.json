@@ -28,7 +28,10 @@
               }
             },
             "process": {
-              "gathering_requirements": "In the initial phase, I met with the owner of Manis Grafika to deeply understand their vision. They desired a minimalist yet elegant design that could depict quality and luxury. This vision was realized through the use of a curated color palette, simple yet sophisticated design, and each page designed to feel timeless and reflect the luxury of their products.",
+              "gathering_requirements": {
+                "description" : "In the initial phase, I met with the owner of Manis Grafika to deeply understand their vision. They desired a minimalist yet elegant design that could depict quality and luxury. This vision was realized through the use of a curated color palette, simple yet sophisticated design, and each page designed to feel timeless and reflect the luxury of their products.",
+                "image": null
+              },
               "site_map": {
                 "description": "The designed site map reflects an efficient and intuitive structure, making it easy for users to navigate the website.",
                 "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*rW431SZFbqXdCw_Q4mEe4g.png "
@@ -36,12 +39,12 @@
             },
             "result": {
               "description": "The website redesign was successful in creating a more modern and luxurious look, enhancing user satisfaction and strengthening Manis Grafika's visual identity in the market. The new site is easier to navigate and more effective in showcasing products.",
-              "mockup": "../assets/images/manisgrafika/mockup.png",
+              "mockup": "/src/assets/images/manisgrafika/mockup.png",
               "images": [
-                "https://i.postimg.cc/K8NHvZjw/home.png",
-                "https://i.postimg.cc/7LZQ5pT6/product.png",
-                "https://i.postimg.cc/MpxLSc61/detail.png",
-                "https://i.postimg.cc/fbqqmBxv/about.png"
+                "/src/assets/images/manisgrafika/home.png",
+                "/src/assets/images/manisgrafika/product.png",
+                "/src/assets/images/manisgrafika/detail.png",
+                "/src/assets/images/manisgrafika/about.png"
               ]
             },
             "live_site": "https://manisgrafika.id"
@@ -49,7 +52,7 @@
           {
             "id": "theinvestor",
             "title": "Transforming The Investor's Website for an Enhanced Investment Learning Experience",
-            "image": "https://theinvestor.id/assets/images/preview.png",
+            "image": "/src/assets/images/theinvestor/cover.png",
             "scope": "UI/UX Design, Wordpress",
             "timeline": "Mar - Apr 2024",
             "about_company": {

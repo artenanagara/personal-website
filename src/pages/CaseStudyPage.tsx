@@ -47,7 +47,10 @@ interface CaseStudy {
       description: string;
       image: null;
     };
-    gathering_requirements: string;
+    gathering_requirements: {
+      description: string;
+      image: null;
+    }
   };
   result: {
     description: string;
@@ -164,11 +167,11 @@ const Result: React.FC<{ result: CaseStudy["result"] }> = ({ result }) => (
       <p className="w-full text-base text-gray-500 md:w-1/3">{result.description}</p>
     </div>
     <div className="w-full">
-    {result.mockup && <img src={result.mockup} alt="" className="w-full flex justify-center px-4 md:px-40"/>}
+    {result.mockup && <img src={result.mockup} alt="" className="w-full flex justify-center px-4 md:px-20"/>}
     </div>
     <div className="flex flex-wrap pb-8 md:pb-16">
       {result.images.map((image, index) => (
-        <div key={index} className="w-full p-4 md:w-1/3 flex">
+        <div key={index} className="w-full p-4 md:w-1/2 flex">
           <ZoomImage src={image} alt={`Result ${index + 1}`} />
         </div>
       ))}

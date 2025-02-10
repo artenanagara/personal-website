@@ -1,13 +1,9 @@
 import React from "react";
-import Card from "../components/Card";
+import WorkList from "../components/WorkList";
 import { SiInstagram } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 import { SiDribbble } from "react-icons/si";
 import ScrollingGallery from "../components/ScrollingGallery";
-
-import mockupMG from "../assets/images/manisgrafika/mockup.png"
-import thumbnailTI from "../assets/images/theinvestor/thumbnail.jpg"
-import mockupTI from "../assets/images/theinvestor/mockup.png"
 
 const Homepage: React.FC = () => {
   
@@ -25,23 +21,22 @@ export default Homepage;
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen pt-20 flex flex-col justify-between md:pt-40">
+    <div className="w-full h-screen pt-24 flex flex-col justify-between md:pt-24">
       <div className="w-full flex flex-col gap-6">
         <div className="flex flex-col">
           <p className="font-medium text-gray-400">Hello, I'm Artena</p>
-          <h1 className="font-bold text-6xl leading-tight md:text-[90px]">
-            Helping Brands Achieve <br />
-            <span className="font-light italic">Digital Excellence</span>
+          <h1 className="w-full font-normal text-6xl leading-tight md:text-[90px]">
+          Creates intuitive and engaging  <span className="font-light italic">user experiences</span> through minimalist design
           </h1>
         </div>
-        <div className="flex flex-row gap-4 text-xl ">
-          <a href="https://instagram.com/artenanagara" target="_blank" rel="noopener noreferrer">
+        <div className="flex flex-row gap-4 text-xl w-1/3">
+          <a href="https://instagram.com/artenanagara" target="_blank" rel="noopener noreferrer" className="p-2 hover:border  hover:bg-[#fa7e1e] hover:text-white transition duration-200 ease-in-out rounded-full">
             <SiInstagram />
           </a>
-          <a href="https://dribbble.com/artenanagara" target="_blank" rel="noopener noreferrer">
+          <a href="https://dribbble.com/artenanagara" target="_blank" rel="noopener noreferrer" className="p-2 hover:border hover:bg-[#EA4C89] hover:text-white transition duration-200 ease-in-out rounded-full">
             <SiDribbble />
           </a>
-          <a href="https://linkedin.com/in/artenanagara" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/artenanagara" target="_blank" rel="noopener noreferrer" className="p-2 hover:border hover:bg-[#0a66c2] hover:text-white transition duration-200 ease-in-out rounded-full">
             <SiLinkedin />
           </a>
         </div>
@@ -56,8 +51,8 @@ const HeroSection = () => {
 
 const AboutSection = () => {
   return (
-    <div className="w-full py-10 flex flex-col gap-4 md:py-40">
-      <h2 className="text-3xl md:text-5xl">about me</h2>
+    <div className="w-full py-20 flex flex-col gap-4 md:py-40">
+      <h2 className="text-5xl md:text-6xl">about me</h2>
       <div className="w-full flex flex-col gap-4 md:flex-row md:gap-16">
         <div className="w-full flex flex-col gap-1 md:w-1/3">
           <p className="text-base font-light">
@@ -83,23 +78,8 @@ const AboutSection = () => {
 const WorkSection = () => {
   return (
     <div className="w-full h-max-screen flex flex-col gap-4 py-10">
-      <h2 className="text-3xl md:text-5xl">selected work</h2>
-      <div className="w-full flex flex-wrap gap-10 sm:flex-wrap md:gap-0">
-        <Card 
-          id="manisgrafika"
-          title="Manis Grafika"
-          category="UI/UX Design, Wordpress"
-          defaultImage="https://manisgrafika.id/wp-content/uploads/2024/10/DSC06248_CONVERT-scaled.webp"
-          hoverImage={mockupMG}
-        />
-        <Card 
-          id="theinvestor"
-          title="The Investor"
-          category="UI/UX Design"
-          defaultImage={thumbnailTI}
-          hoverImage={mockupTI}
-        />
-      </div>
+      <h2 className="text-5xl md:text-6xl">selected work</h2>
+      <WorkList />
     </div>
   );
 }
