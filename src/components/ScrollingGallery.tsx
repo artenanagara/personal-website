@@ -39,7 +39,7 @@ const ScrollingGallery = () => {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const currentPosition = event.clientX - slideRange;
       controls.start({
-        x: [`currentPosition`, '0%'],
+        x: [currentPosition, '0%'],
         transition: { repeat: Infinity, duration: 20, ease: "linear" }
       });
     };
