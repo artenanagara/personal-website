@@ -13,7 +13,7 @@ const WorkList: React.FC = () => (
             category="UI/UX Design"
             defaultImage={CoverManisGrafika}
             hoverImage={HoverTheInvestor}
-            locked={true} // Atur ini sesuai kebutuhan
+            locked={false} // Atur ini sesuai kebutuhan
         />
         <Card 
             id="the-investor"
