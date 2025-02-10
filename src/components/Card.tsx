@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
 interface CardProps {
     id: string;
     title: string;
@@ -61,7 +62,7 @@ const Card: React.FC<CardProps> = ({
                     className="absolute top-0 left-0 w-full h-[300px] object-cover transition-transform duration-700 ease-out transform translate-x-full group-hover:translate-x-0 md:h-[400px]"
                 />
                 <div className="flex justify-between px-4 py-2 bg-white bg-opacity-80 md:px-0 md:py-0 md:pb-8">
-                    <h2 className="text-xl font-medium">{title}</h2>
+                    <h2 className="text-xl font-medium" >{title}</h2>
                     <p className="text-base font-light text-gray-500">{category}</p>
                 </div>
                 {cursorPos.visible &&(
@@ -70,7 +71,7 @@ const Card: React.FC<CardProps> = ({
                             position: 'absolute',
                             left: `${cursorPos.x}px`,
                             top: `${cursorPos.y}px`,
-                            transform: 'translate(-50%, -50%)',
+                            transform: 'translate(-50%, -100%)',
                             padding: '8px 24px',
                             backgroundColor: '#FFEB00',
                             fontSize: '16px',
