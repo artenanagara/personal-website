@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-const LoadingScreen: React.FC = () => {
+interface LoadingScreenProps {
+  onFinish: () => void;
+}
+
+const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinish }) => {
   const [percentage, setPercentage] = useState(0);
   const [loading, setLoading] = useState(true);
 
@@ -12,31 +16,37 @@ const LoadingScreen: React.FC = () => {
           clearInterval(interval);
           setTimeout(() => {
             setLoading(false);
-          }, 800); // Wait for 3 seconds to transition out
+            onFinish(); // Notifikasi ke Homepage bahwa loading selesai
+          }, 800);
           return 100;
         }
-        return prev + Math.floor(Math.random() * 3 + 1); // Increment random amount, simulate jerkiness
+        return prev + Math.floor(Math.random() * 3 + 1);
       });
-    }, 50); // Update every 50ms
+    }, 50);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [onFinish]);
 
   return (
     <AnimatePresence>
       {loading && (
         <motion.div
           initial={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 1, y: '-100%', transition: { duration: 5, ease: [0.87, 0, 0.13, 1] } }} // Jerky transition
-          className="w-full fixed inset-0 bg-black z-50 flex justify-end items-end p-4"
-          style={{ pointerEvents: 'auto' }}
+          exit={{
+            opacity: 0,
+            y: "-100%",
+            transition: { duration: 1, ease: [0.87, 0, 0.13, 1] },
+          }}
+          className="w-full fixed inset-0 bg-black z-50 flex justify-center items-center"
+          style={{ pointerEvents: "auto" }}
         >
           <motion.span
             className="text-white text-5xl font-bold md:text-7xl"
-            initial={{ opacity: 1 }}
-            animate={{ opacity: [1], transition: { repeat: Infinity, duration: 0.5 } }} // Blink effect
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
-            {percentage < 100 ? `${percentage}%` : 'Welcome'}
+            {percentage < 100 ? `${percentage}%` : "Welcome"}
           </motion.span>
         </motion.div>
       )}

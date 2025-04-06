@@ -1,47 +1,36 @@
 import React from "react";
 import Card from "./Card";
-import CoverManisGrafika from "../assets/images/manisgrafika/mockup.png";
-import CoverTheInvestor from "../assets/images/theinvestor/thumbnail.jpg";
-import HoverTheInvestor from "../assets/images/theinvestor/mockup.png";
-import CoverProbolinggo from "../assets/images/greenprobolinggo/trash.jpg";
+import caseStudyRaw from "../data/CaseStudy.json"; // asumsi file JSON di src/data/
 
+interface WorkListProps {
+  limit?: number; // Optional prop
+}
 
-const WorkList: React.FC = () => (
+const WorkList: React.FC<WorkListProps> = ({ limit }) => {
+  const caseStudyData = (caseStudyRaw as any).caseStudy;
+
+  // Fungsi bantu untuk bersihkan path
+  const normalizeImagePath = (path: string | null) => {
+    if (!path) return "/images/fallback.jpg"; // fallback image jika null
+    return path.replace("..", ""); // "../assets/images/..." -> "/assets/images/..."
+  };
+
+  return (
     <div className="w-full flex flex-wrap gap-4 md:gap-0 md:py-4">
-        <Card 
-            id="manis-grafika"
-            title="Manis Grafika"
-            category="UI/UX Design"
-            defaultImage={CoverManisGrafika}
-            hoverImage={HoverTheInvestor}
-            locked={false} // Atur ini sesuai kebutuhan
-            
+      {caseStudyData.slice(0, limit || caseStudyData.length).map((item: any, index: number) => (
+        <Card
+          key={item.id}
+          id={item.id}
+          title={item.about_project.company}
+          category={item.about_project.scope}
+          defaultImage={normalizeImagePath(item.thumbnail)}
+          hoverImage={normalizeImagePath(item.hover)}
+          locked={item.locked === "true"} 
+          aosDelay={index * 100}
         />
-        <Card 
-            id="manis-grafika"
-            title="Manis Grafika"
-            category="UI/UX Design"
-            defaultImage={CoverManisGrafika}
-            hoverImage={HoverTheInvestor}
-            locked={false} // Atur ini sesuai kebutuhan
-        />
-        <Card 
-            id="the-investor"
-            title="The Investor"
-            category="UI/UX Design"
-            defaultImage={CoverTheInvestor}
-            hoverImage={HoverTheInvestor}
-            locked={false} // Atur ini sesuai kebutuhan
-        />
-        <Card 
-            id="probolinggo"
-            title="Probolinggo"
-            category="UI/UX Design"
-            defaultImage={CoverProbolinggo}
-            hoverImage={HoverTheInvestor}
-            locked={true} // Atur ini sesuai kebutuhan
-        />
+      ))}
     </div>
-);
+  );
+};
 
 export default WorkList;

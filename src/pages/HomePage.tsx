@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import WorkList from "../components/WorkList";
 import { SiInstagram } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
@@ -6,51 +6,62 @@ import { SiDribbble } from "react-icons/si";
 import ScrollingGallery from "../components/ScrollingGallery";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { motion } from "framer-motion";
+import LoadingScreen from "../components/animations/LoadingScreen";
+// import { motion } from "framer-motion";
 
 const Homepage: React.FC = () => {
+  const [loadingFinished, setLoadingFinished] = useState(false);
+
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, [])
-  
+    if (loadingFinished) {
+      AOS.init({ duration: 1500 });
+      AOS.refresh(); // Penting untuk memastikan re-init setelah loading
+    }
+  }, [loadingFinished]);
+
   return (
-      <div className="w-full h-max-screen px-4 bg-white md:px-10 ">
-      <HeroSection />
-      <AboutSection />
-      <WorkSection />
-      <ScrollingGallery />
-    </div>
+    <>
+      {!loadingFinished ? (
+        <LoadingScreen onFinish={() => setLoadingFinished(true)} />
+      ) : (
+        <div className="w-full px-4 md:px-10 ">
+          <HeroSection />
+          <AboutSection />
+          <WorkSection />
+          <ScrollingGallery />
+        </div>
+      )}
+    </>
   );
-}
+};
 
 export default Homepage;
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen pt-24 flex flex-col justify-between md:pt-24">
+    <div className="w-full min-h-screen pt-24 flex flex-col justify-between">
       <div className="w-full flex flex-col gap-6">
         <div className="flex flex-col">
-          <motion.p 
+          <p 
             className="font-medium text-gray-400"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 6.5,  ease: "easeOut" }}
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
               Hello, I'm Artena
-          </motion.p>
-          <motion.h1 
+          </p>
+          <h1 
             className="w-full font-normal text-6xl leading-tight md:text-[90px]"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2, delay: 6,  ease: "easeIn" }}
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
-          Creates intuitive and engaging  <span className="font-light italic">user experiences</span> through minimalist design
-          </motion.h1>
+            Creates intuitive and engaging <span className="font-light italic">user experiences</span> through minimalist design
+          </h1>
         </div>
-        <motion.div className="flex flex-row gap-4 text-xl w-1/3"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 5.5,  ease: "easeIn" }}>
+        <div 
+          className="flex flex-row gap-4 text-xl w-1/3"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           <a href="https://instagram.com/artenanagara" target="_blank" rel="noopener noreferrer" className="p-2 hover:border  hover:bg-[#fa7e1e] hover:text-white transition duration-200 ease-in-out rounded-full">
             <SiInstagram />
           </a>
@@ -60,37 +71,39 @@ const HeroSection = () => {
           <a href="https://linkedin.com/in/artenanagara" target="_blank" rel="noopener noreferrer" className="p-2 hover:border hover:bg-[#0a66c2] hover:text-white transition duration-200 ease-in-out rounded-full">
             <SiLinkedin />
           </a>
-        </motion.div>
+        </div>
       </div>
-      <div className="w-full pb-4 flex justify-between text-xs font-medium md:text-base">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2.5, delay: 5,  ease: "easeOut" }}
+      <div className="w-full pb-4 flex justify-between text-xs font-medium md:text-base scroll-mt-16">
+        <p
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-anchor-placement="top-bottom"
         >
           Located in <br /> Surakarta, Indonesia 🇮🇩
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2.5, delay: 5,  ease: "easeOut" }}>
-            Currently available for <br /> 🌎 freelance worldwide
-        </motion.p>
+        </p>
+        <p
+          data-aos="fade-left"
+          data-aos-delay="600"
+          data-aos-anchor-placement="top-bottom"
+        >
+          Currently available for <br /> 🌎 freelance worldwide
+        </p>
       </div>
     </div>
   );
 }
 
+
 const AboutSection = () => {
   return (
-    <div className="w-full py-20 flex flex-col gap-4 md:py-40">
-      <h2 className="text-5xl md:text-6xl" data-aos="fade-left">about me</h2>
+    <div className="w-full py-80 flex flex-col gap-4 md:py-40">
+      <h2 className="text-5xl md:text-6xl" data-aos="fade-right">about me</h2>
       <div className="w-full flex flex-col gap-4 md:flex-row md:gap-16">
         <div className="w-full flex flex-col gap-1 md:w-1/3">
           <p className="text-base font-light" data-aos="fade-up">
             I'm a freelance web designer and co-founder of Cicle Studio, a studio focused on creating tailor-made websites.
           </p>
-          <a href="https://instagram.com/cicle.studio" target="_blank" className="underline font-light hover:italic" data-aos="fade-up">
+          <a href="https://instagram.com/cicle.studio" target="_blank" className="underline font-light hover:italic" data-aos="fade-up" data-aos-delay="300">
             Discover Cicle Studio
           </a>
         </div>
@@ -111,7 +124,7 @@ const WorkSection = () => {
   return (
     <div className="w-full h-max-screen flex flex-col gap-4 py-10">
       <h2 className="text-5xl md:text-6xl" data-aos="fade-up">selected work</h2>
-      <WorkList />
+      <WorkList limit={4} />
     </div>
   );
 }
