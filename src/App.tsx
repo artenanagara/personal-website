@@ -10,7 +10,7 @@ const App: React.FC = () => {
   
   return (  
     <Router>
-      <LoadingScreen />
+      <LoadingScreen onFinish={() => console.log('Loading finished')} />
       <ScrollToTop />
       <Navbar />
       {routes}  
