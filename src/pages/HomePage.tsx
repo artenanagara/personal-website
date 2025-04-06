@@ -60,7 +60,7 @@ const HeroSection = () => {
         <div 
           className="flex flex-row gap-4 text-xl w-1/3"
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-delay="400"
         >
           <a href="https://instagram.com/artenanagara" target="_blank" rel="noopener noreferrer" className="p-2 hover:border  hover:bg-[#fa7e1e] hover:text-white transition duration-200 ease-in-out rounded-full">
             <SiInstagram />
@@ -96,7 +96,7 @@ const HeroSection = () => {
 
 const AboutSection = () => {
   return (
-    <div className="w-full py-80 flex flex-col gap-4 md:py-40">
+    <div className="w-full pt-80 pb-20 flex flex-col gap-4 md:py-40">
       <h2 className="text-5xl md:text-6xl" data-aos="fade-right">about me</h2>
       <div className="w-full flex flex-col gap-4 md:flex-row md:gap-16">
         <div className="w-full flex flex-col gap-1 md:w-1/3">
