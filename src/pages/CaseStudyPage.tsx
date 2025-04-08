@@ -135,7 +135,7 @@ const Content: React.FC<{ caseStudy: CaseStudy }> = ({ caseStudy }) => (
 );
 
 const Visual: React.FC<{ caseStudy: CaseStudy }> = ({ caseStudy }) => (
-  <div className="w-full flex flex-col gap-4 px-4 pb-20 md:px-10" data-aos="fade-up">
+  <div className="w-full flex flex-col gap-8 px-4 pb-20 md:px-10" data-aos="fade-up">
   <div className="flex flex-col gap-4">
     {Object.values(caseStudy.visual)
       .filter(Boolean)
