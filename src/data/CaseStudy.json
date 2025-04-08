@@ -3,7 +3,7 @@
     {
       "id": "manisgrafika",
       "locked":"false",
-      "title": "A Luxurious Digital Presence for a Timeless Print Tradition",
+      "title": "Redesigning Manis Grafika's to Reflect a Sense of Luxury and Elegance",
       "thumbnail": "/assets/images/manisgrafika/thumbnail.jpg",
       "hover" : "/assets/images/manisgrafika/mockup.png",
       "about_project" : {
@@ -14,23 +14,25 @@
         "cover": "/assets/images/manisgrafika/cover.webp",
         "url": "https://manisgrafika.id"
       },
-      "about_company": "Manis Grafika specializes in producing elegant, high-quality prayer books. Renowned for its commitment to beauty and tradition, Manis Grafika combines artistic values with high production quality.",
-      "challenge": "Before having a website, Manis Grafika relied solely on word-of-mouth, printed catalogs, and direct communication through messaging apps to showcase their products and handle customer orders. This manual process not only limited their digital presence but also made it difficult for potential customers to browse product variations efficiently. The lack of an online platform also affected the brand’s perceived professionalism in an increasingly digital market.",
-      "solution":"To address the challenge, I designed a responsive website that balances luxurious visual elements with functional simplicity. The homepage welcomes users with a polished hero section showcasing premium products and key messaging. Below it, a well-organized catalog section allows users to scroll through featured designs with ease. I chose a soft, neutral color palette and elegant typefaces to reflect the brand’s spiritual tone, while ensuring readability and mobile responsiveness. A dedicated contact section streamlines communication and encourages inquiries. Overall, the solution delivers a refined yet accessible user experience that elevates Manis Grafika’s digital presence.",
-      "goals": "The primary goal was to create a modern, elegant company profile website that highlights the variety and quality of Manis Grafika’s offerings while enhancing trust and ease of access for customers. The site needed to serve as a digital catalog, helping visitors explore book design options visually, understand the company’s service scope, and initiate orders seamlessly.",
-      "visual":{
-        "image1": "src/assets/images/manisgrafika/mockup.png",
-        "image2": "src/assets/images/manisgrafika/mockup.png",
-        "image3": "src/assets/images/manisgrafika/mockup.png",
-        "image4": "src/assets/images/manisgrafika/mockup.png",
-        "image5": "src/assets/images/manisgrafika/mockup.png",
-        "image6": "src/assets/images/manisgrafika/mockup.png"
-      }
+      "about_company": "Manis Grafika is a professional book publisher and printing service based in Solo, Indonesia, specializing in religious books such as Yasin and Tahlil. They are known for producing high-quality, aesthetically pleasing prayer books using premium materials.",
+      "challenge": "Manis Grafika initially had a static and outdated landing page that failed to represent the premium quality of their products. Even though they actively sold on Shopee, Tokopedia, and promoted via Instagram and Facebook, the existing website did not support or reflect their brand’s luxurious image.",
+      "goals": [
+        "Redesign the website to make it look more luxurious and elegant, aligning with the product’s character.",
+        "Present a digital catalog that is minimalist, clean, and easy to browse.",
+        "Enhance brand credibility through a more professional digital appearance."
+      ],
+      "solution" : "To address the problem, I conducted visual research on several luxury brands including Bottega Veneta, Burberry, Chanel, Chloé, and Christian Dior. These websites typically use clean white backgrounds, minimalist layouts, and focus heavily on high-quality product imagery. \n Inspired by these elements, I redesigned Manis Grafika’s website to be clean, elegant, and product-centric. The main highlight of the new design is large product photos that emphasize the premium feel of their offerings.",
+      "visual":[
+        "/assets/images/manisgrafika/mockup.png",
+        "/assets/images/manisgrafika/mockup.png",
+        "/assets/images/manisgrafika/mockup.png",
+        "/assets/images/manisgrafika/mockup.png"
+      ]
     },
     {
       "id": "theinvestor",
       "locked":"false",
-      "title": "Designing Clarity: A Calm, Confident Presence for Smart Investors",
+      "title": "Designing an Investment Education Website That Highlights Free Ebook and Learning Programs",
       "thumbnail": "assets/images/theinvestor/thumbnail.jpg",
       "hover" : "/assets/images/theinvestor/mockup.png",
       "about_project" : {
@@ -41,21 +43,23 @@
         "cover": "/assets/images/theinvestor/cover.png",
         "url": "https://theinvestor.id"
       },
-      "about_company": "The Investor is a digital platform dedicated to empowering individuals through stock investment education. It offers a calm and strategic learning experience for beginners and experienced investors alike, featuring curated programs, insightful articles, and community-driven content. With a rapidly growing audience, The Investor aims to build a strong brand presence as a trusted source of financial education in Indonesia.",
-      "challenge": "Despite having a solid program and strong community engagement, The Investor lacked a website that reflected its brand personality and professionalism. Their online presence was fragmented, and potential users didn’t have a single place to clearly understand what the platform stood for. The main challenge was to create a website that could consolidate brand identity while remaining simple, modern, and inviting to its audience",
-      "solution":"To meet these goals, I designed a refined and responsive website that delivers a focused experience, both visually and structurally. The homepage introduces the brand with a bold headline and minimal aesthetic, followed by concise sections that explain the brand story, what it offers, and how users can engage. Neutral colors, clean typography, and deliberate spacing were used to convey professionalism and trust. The structure leads users naturally toward a call-to-action, encouraging further interaction. The website is fully optimized for mobile, ensuring consistent accessibility across all devices.",
-      "goals": "The project’s main objective was to create a company profile website that represents The Investor’s credibility, focus, and clarity. It needed to communicate the brand’s vision and values while introducing the platform’s core offerings in an elegant, easy-to-digest format. The site also needed to guide visitors toward further exploration — whether that meant reading educational content, exploring programs, or joining the community.",
-      "visual":{
-        "image1": "src/assets/images/manisgrafika/mockup.png",
-        "image2": "src/assets/images/manisgrafika/mockup.png",
-        "image3": "src/assets/images/manisgrafika/mockup.png",
-        "image4": "src/assets/images/manisgrafika/mockup.png",
-        "image5": "src/assets/images/manisgrafika/mockup.png",
-        "image6": "src/assets/images/manisgrafika/mockup.png"
-      }
+      "about_company": "The Investor is an educational platform that helps people grow their wealth with confidence through the right investment strategies. It offers accessible learning programs, articles, a Discord community, and a YouTube channel — available anytime and anywhere.",
+      "challenge": "The Investor wanted to create a digital presence that feels professional yet youthful and easy to navigate. The main challenge was to spotlight the free ebook as a key conversion tool and organize the learning programs and resources in a way that encourages exploration. At the same time, the design needed to reflect a modern and trustworthy brand identity that appeals to younger audiences.",
+      "goals":[
+        "Feature the free ebook prominently to drive user engagement",
+        "Display programs and learning resources in a structured and appealing layout.",
+        "Align the website’s visual style with the brand’s friendly and modern tone."
+        ],
+      "solution": "To create a focused and engaging user journey, I placed the free ebook at the top of the homepage in the hero section, ensuring it grabs immediate attention. The visual design was kept clean and brand-consistent, with intuitive layouts for the programs, articles, Discord, and YouTube sections. Although the design is not yet responsive, the desktop version provides a strong first impression and effectively communicates the platform’s value and offerings.",
+      "visual":[
+        "/assets/images/theinvestor/mockup.png",
+        "/assets/images/theinvestor/mockup.png",
+        "/assets/images/theinvestor/mockup.png",
+        "/assets/images/theinvestor/mockup.png"
+       ]
     },
     {
-      "id": "theinvestor",
+      "id": "exmood",
       "locked":"true",
       "title": "Designing Clarity: A Calm, Confident Presence for Smart Investors",
       "thumbnail": "assets/images/exmood/thumbnail.jpg",
@@ -67,18 +71,6 @@
         "role": "UI Designer",
         "cover": "/assets/images/theinvestor/cover.png",
         "url": "https://theinvestor.id"
-      },
-      "about_company": "The Investor is a digital platform dedicated to empowering individuals through stock investment education. It offers a calm and strategic learning experience for beginners and experienced investors alike, featuring curated programs, insightful articles, and community-driven content. With a rapidly growing audience, The Investor aims to build a strong brand presence as a trusted source of financial education in Indonesia.",
-      "challenge": "Despite having a solid program and strong community engagement, The Investor lacked a website that reflected its brand personality and professionalism. Their online presence was fragmented, and potential users didn’t have a single place to clearly understand what the platform stood for. The main challenge was to create a website that could consolidate brand identity while remaining simple, modern, and inviting to its audience",
-      "solution":"To meet these goals, I designed a refined and responsive website that delivers a focused experience, both visually and structurally. The homepage introduces the brand with a bold headline and minimal aesthetic, followed by concise sections that explain the brand story, what it offers, and how users can engage. Neutral colors, clean typography, and deliberate spacing were used to convey professionalism and trust. The structure leads users naturally toward a call-to-action, encouraging further interaction. The website is fully optimized for mobile, ensuring consistent accessibility across all devices.",
-      "goals": "The project’s main objective was to create a company profile website that represents The Investor’s credibility, focus, and clarity. It needed to communicate the brand’s vision and values while introducing the platform’s core offerings in an elegant, easy-to-digest format. The site also needed to guide visitors toward further exploration — whether that meant reading educational content, exploring programs, or joining the community.",
-      "visual":{
-        "image1": "src/assets/images/manisgrafika/mockup.png",
-        "image2": "src/assets/images/manisgrafika/mockup.png",
-        "image3": "src/assets/images/manisgrafika/mockup.png",
-        "image4": "src/assets/images/manisgrafika/mockup.png",
-        "image5": "src/assets/images/manisgrafika/mockup.png",
-        "image6": "src/assets/images/manisgrafika/mockup.png"
       }
     },
     {
@@ -94,18 +86,6 @@
         "role": "UI/UX Designer",
         "cover": "/assets/images/theinvestor/cover.png",
         "url": "https://theinvestor.id"
-      },
-      "about_company": "The Investor is a digital platform dedicated to empowering individuals through stock investment education. It offers a calm and strategic learning experience for beginners and experienced investors alike, featuring curated programs, insightful articles, and community-driven content. With a rapidly growing audience, The Investor aims to build a strong brand presence as a trusted source of financial education in Indonesia.",
-      "challenge": "Despite having a solid program and strong community engagement, The Investor lacked a website that reflected its brand personality and professionalism. Their online presence was fragmented, and potential users didn’t have a single place to clearly understand what the platform stood for. The main challenge was to create a website that could consolidate brand identity while remaining simple, modern, and inviting to its audience",
-      "solution":"To meet these goals, I designed a refined and responsive website that delivers a focused experience, both visually and structurally. The homepage introduces the brand with a bold headline and minimal aesthetic, followed by concise sections that explain the brand story, what it offers, and how users can engage. Neutral colors, clean typography, and deliberate spacing were used to convey professionalism and trust. The structure leads users naturally toward a call-to-action, encouraging further interaction. The website is fully optimized for mobile, ensuring consistent accessibility across all devices.",
-      "goals": "The project’s main objective was to create a company profile website that represents The Investor’s credibility, focus, and clarity. It needed to communicate the brand’s vision and values while introducing the platform’s core offerings in an elegant, easy-to-digest format. The site also needed to guide visitors toward further exploration — whether that meant reading educational content, exploring programs, or joining the community.",
-      "visual":{
-        "image1": "src/assets/images/manisgrafika/mockup.png",
-        "image2": "src/assets/images/manisgrafika/mockup.png",
-        "image3": "src/assets/images/manisgrafika/mockup.png",
-        "image4": "src/assets/images/manisgrafika/mockup.png",
-        "image5": "src/assets/images/manisgrafika/mockup.png",
-        "image6": "src/assets/images/manisgrafika/mockup.png"
       }
     }
   ]

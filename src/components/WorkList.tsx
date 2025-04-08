@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import Card from "./Card";
-import caseStudyRaw from "../data/CaseStudy.json"; // asumsi file JSON di src/data/
+import caseStudyRaw from "../data/CaseStudy.json"; 
 
 interface WorkListProps {
-  limit?: number; // Optional prop
+  limit?: number; 
 }
 
 const WorkList: React.FC<WorkListProps> = ({ limit }) => {
@@ -12,11 +13,11 @@ const WorkList: React.FC<WorkListProps> = ({ limit }) => {
   // Fungsi bantu untuk bersihkan path
   const normalizeImagePath = (path: string | null) => {
     if (!path) return "/images/fallback.jpg"; // fallback image jika null
-    return path.replace("..", ""); // "../assets/images/..." -> "/assets/images/..."
+    return path.replace("..", ""); 
   };
 
   return (
-    <div className="w-full flex flex-wrap gap-4 md:gap-0 md:py-4">
+    <div className="w-full flex flex-wrap gap-4 md:gap-0 md:py-0">
       {caseStudyData.slice(0, limit || caseStudyData.length).map((item: any, index: number) => (
         <Card
           key={item.id}
@@ -26,7 +27,7 @@ const WorkList: React.FC<WorkListProps> = ({ limit }) => {
           defaultImage={normalizeImagePath(item.thumbnail)}
           hoverImage={normalizeImagePath(item.hover)}
           locked={item.locked === "true"} 
-          aosDelay={index * 100}
+          aosDelay={index * 200}
         />
       ))}
     </div>
