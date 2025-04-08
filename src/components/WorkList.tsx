@@ -27,7 +27,7 @@ const WorkList: React.FC<WorkListProps> = ({ limit }) => {
           defaultImage={normalizeImagePath(item.thumbnail)}
           hoverImage={normalizeImagePath(item.hover)}
           locked={item.locked === "true"} 
-          aosDelay={index * 200}
+          aosDelay={index * 100}
         />
       ))}
     </div>
