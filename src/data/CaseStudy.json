@@ -23,10 +23,12 @@
       ],
       "solution" : "To address the problem, I conducted visual research on several luxury brands including Bottega Veneta, Burberry, Chanel, Chloé, and Christian Dior. These websites typically use clean white backgrounds, minimalist layouts, and focus heavily on high-quality product imagery. \n Inspired by these elements, I redesigned Manis Grafika’s website to be clean, elegant, and product-centric. The main highlight of the new design is large product photos that emphasize the premium feel of their offerings.",
       "visual":[
-        "/assets/images/manisgrafika/mockup.png",
-        "/assets/images/manisgrafika/mockup.png",
-        "/assets/images/manisgrafika/mockup.png",
-        "/assets/images/manisgrafika/mockup.png"
+        "/assets/images/manisgrafika/image1.webp",
+        "/assets/images/manisgrafika/image2.webp",
+        "/assets/images/manisgrafika/image3.webp",
+        "/assets/images/manisgrafika/image4.webp",
+        "/assets/images/manisgrafika/image5.webp",
+        "/assets/images/manisgrafika/image6.webp"
       ]
     },
     {
@@ -67,11 +69,19 @@
       "about_project" : {
         "company": "Exmood",
         "timeline": "Mar - Apr 2024",
-        "scope": "UI/UX Design",
+        "scope": "UI/UX Design, Competition",
         "role": "UI Designer",
         "cover": "/assets/images/theinvestor/cover.png",
         "url": "https://theinvestor.id"
-      }
+      },
+      "overview": "EXMOOD is a mobile application designed to help users monitor their emotional well-being through mood tracking and journaling. The app focuses on offering a safe, private, and judgment-free experience — encouraging self-reflection without pressure.",
+      "problem": "Mental health is becoming an increasingly relevant issue, especially among young adults. Many people experience anxiety, stress, or emotional instability, yet most feel uncomfortable discussing it with others — even professionals.",
+      "goals":[
+        "Deliver a calming, minimalist UI design",
+        ""
+
+      ]
+
     },
     {
       "id": "greenprobolinggo",
