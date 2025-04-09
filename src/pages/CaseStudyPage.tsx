@@ -89,7 +89,7 @@ const AboutCompany: React.FC<{ caseStudy: CaseStudy }> = ({ caseStudy }) => (
         <div className="w-full flex flex-col gap-10 md:w-1/2 ">
           <p className="text-3xl font-bold md:text-4xl" data-aos='fade-up' data-aos-delay='300'>{caseStudy.about_company}</p>
           <a href={caseStudy.about_project.url} target="_blank" rel="noopener noreferrer" data-aos='fade-up'>
-            <button className="bg-black text-white px-8 py-4 rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black">Visit Website</button>
+            <button className="bg-black text-white px-8 py-4 rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition duration-300">Visit Website</button>
           </a>
         </div>
     </div>
