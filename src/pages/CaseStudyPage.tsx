@@ -179,6 +179,7 @@ const Visual: React.FC<{ caseStudy: CaseStudy }> = ({ caseStudy }) => (
             {group[2] && (
               <img
                 src={group[2]}
+                loading="lazy"
                 alt={`Visual ${i * 3 + 3}`}
                 className="w-full object-cover md:w-1/2"
                 style={{
