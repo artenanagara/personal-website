@@ -88,18 +88,35 @@
     },
     {
       "id": "greenprobolinggo",
-      "locked":"true",
-      "title": "Designing Clarity: A Calm, Confident Presence for Smart Investors",
+      "locked":"false",
+      "title": "Building a Comprehensive Trash Bank Dashboard with Features for Both Customers and Admins",
       "thumbnail": "/assets/images/greenprobolinggo/trash.jpg",
       "hover" : "/assets/images/greenprobolinggo/mockup.png",
       "about_project" : {
         "company": "Green Probolinggo",
-        "timeline": "Mar - Apr 2024",
+        "timeline": "Dec 2024 -Feb 2025",
         "scope": "UI/UX Design, Website Development",
-        "role": "UI/UX Designer",
+        "role": "UI/UX Designer, Front End Developer",
         "cover": "/assets/images/theinvestor/cover.png",
-        "url": "https://theinvestor.id"
-      }
+        "url": "http://202.10.44.156/"
+      },
+      "about_company": "Greenprobo is a trash bank dashboard platform with two main roles: customers and admins. This platform allows customers to manage their waste more effectively with features such as viewing transaction history, simulating earnings from waste, withdrawing funds, and monitoring incoming and outgoing transactions. Admins have full control over CRUD (Create, Read, Update, Delete) functions for managing customer data, waste data, transaction records, and processing customer fund withdrawals.",
+      "challenge": "Greenprobo faced the challenge of creating a user-friendly dashboard with clear role-based access for both customers and admins. Customers needed the ability to view their transaction history, calculate potential earnings from waste, and request withdrawals transparently. Meanwhile, admins needed a system that would efficiently manage customer data and waste transactions in real time. A solution was required that was not only intuitive but also secure for handling sensitive financial data.",
+      "goals":[
+        "Design a clear and intuitive dashboard for both customers and admins",
+        "Provide a waste earnings simulation feature for customers",
+        "Deliver a transparent and efficient user experience",
+        "Ensure admins can easily manage customer data, waste transactions, and withdrawal requests"
+        ],
+      "solution": "For customers, I designed an interface that makes it easy for them to view transaction history, simulate earnings from waste, and access the fund withdrawal feature. The incoming and outgoing transactions were also made intuitive to help customers monitor their financial status effortlessly.\n For admins, I created a control panel that simplifies the CRUD process for managing customer data and waste transactions. The system for handling fund withdrawals was also designed with high efficiency, allowing admins to quickly verify and process requests securely. This system’s design emphasizes simplicity and clarity, ensuring that both customers and admins can interact smoothly with the platform.",
+       "visual":[
+        "/assets/images/greenprobolinggo/06.webp",
+        "/assets/images/greenprobolinggo/02.webp",
+        "/assets/images/greenprobolinggo/04.webp",
+        "/assets/images/greenprobolinggo/05.webp",
+        "/assets/images/greenprobolinggo/03.webp",
+        "/assets/images/greenprobolinggo/01.webp"
+       ]
     }
   ]
 }
