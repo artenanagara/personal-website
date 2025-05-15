@@ -13,6 +13,10 @@ const images = [
   {
     src: 'https://cdn.dribbble.com/userupload/13127156/file/original-701489418a9b8ff84c3dc4ac5425bdfe.jpg?resize=752x564&vertical=center',
     url: 'https://dribbble.com/shots/23668006--Umah-Real-Estate-Landing-Page'
+  },
+  {
+    src: 'https://cdn.dribbble.com/userupload/43315629/file/original-3fe75f38f4d5408916e8a12e37567bd3.png?resize=1024x768&vertical=center',
+    url: 'https://dribbble.com/shots/26025028-Ecovolt-Electric-Vehicle-Power-Landing-Page'
   }
 ];
 
@@ -65,7 +69,6 @@ const ScrollingGallery = () => {
               href={src.url}
               target='_blank'
               rel='noopener noreferrer'
-              // ❌ HAPUS data-aos dari elemen ini
             >
               <motion.img
                 src={src.src}
