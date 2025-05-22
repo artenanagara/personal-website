@@ -2,11 +2,11 @@
   "caseStudy": [
     {
       "id": "manisgrafika",
-      "locked":"false",
+      "locked": "false",
       "title": "Redesigning Manis Grafika's to Reflect a Sense of Luxury and Elegance",
       "thumbnail": "/assets/images/manisgrafika/thumbnail.jpg",
-      "hover" : "/assets/images/manisgrafika/mockup.png",
-      "about_project" : {
+      "hover": "/assets/images/manisgrafika/mockup.png",
+      "about_project": {
         "company": "Manis Grafika",
         "timeline": "Oct - Dec 2024",
         "scope": "UI/UX Design,Wordpress",
@@ -21,8 +21,8 @@
         "Present a digital catalog that is minimalist, clean, and easy to browse.",
         "Enhance brand credibility through a more professional digital appearance."
       ],
-      "solution" : "To address the problem, I conducted visual research on several luxury brands including Bottega Veneta, Burberry, Chanel, Chloé, and Christian Dior. These websites typically use clean white backgrounds, minimalist layouts, and focus heavily on high-quality product imagery. \n Inspired by these elements, I redesigned Manis Grafika’s website to be clean, elegant, and product-centric. The main highlight of the new design is large product photos that emphasize the premium feel of their offerings.",
-      "visual":[
+      "solution": "To address the problem, I conducted visual research on several luxury brands including Bottega Veneta, Burberry, Chanel, Chloé, and Christian Dior. These websites typically use clean white backgrounds, minimalist layouts, and focus heavily on high-quality product imagery. \n Inspired by these elements, I redesigned Manis Grafika’s website to be clean, elegant, and product-centric. The main highlight of the new design is large product photos that emphasize the premium feel of their offerings.",
+      "visual": [
         "/assets/images/manisgrafika/image1.webp",
         "/assets/images/manisgrafika/image2.webp",
         "/assets/images/manisgrafika/image3.webp",
@@ -33,11 +33,11 @@
     },
     {
       "id": "theinvestor",
-      "locked":"false",
+      "locked": "false",
       "title": "Designing an Investment Education Website That Highlights Free Ebook and Learning Programs",
       "thumbnail": "assets/images/theinvestor/thumbnail.jpg",
-      "hover" : "/assets/images/theinvestor/mockup.png",
-      "about_project" : {
+      "hover": "/assets/images/theinvestor/mockup.png",
+      "about_project": {
         "company": "The Investor",
         "timeline": "Mar - Apr 2024",
         "scope": "UI/UX Design,Wordpress",
@@ -47,13 +47,13 @@
       },
       "about_company": "The Investor is an educational platform that helps people grow their wealth with confidence through the right investment strategies. It offers accessible learning programs, articles, a Discord community, and a YouTube channel — available anytime and anywhere.",
       "challenge": "The Investor wanted to create a digital presence that feels professional yet youthful and easy to navigate. The main challenge was to spotlight the free ebook as a key conversion tool and organize the learning programs and resources in a way that encourages exploration. At the same time, the design needed to reflect a modern and trustworthy brand identity that appeals to younger audiences.",
-      "goals":[
+      "goals": [
         "Feature the free ebook prominently to drive user engagement",
         "Display programs and learning resources in a structured and appealing layout.",
         "Align the website’s visual style with the brand’s friendly and modern tone."
-        ],
+      ],
       "solution": "To create a focused and engaging user journey, I placed the free ebook at the top of the homepage in the hero section, ensuring it grabs immediate attention. The visual design was kept clean and brand-consistent, with intuitive layouts for the programs, articles, Discord, and YouTube sections. Although the design is not yet responsive, the desktop version provides a strong first impression and effectively communicates the platform’s value and offerings.",
-      "visual":[
+      "visual": [
         "/assets/images/theinvestor/image1.webp",
         "/assets/images/theinvestor/image2.webp",
         "/assets/images/theinvestor/image3.webp",
@@ -61,15 +61,15 @@
         "/assets/images/theinvestor/image5.webp",
         "/assets/images/theinvestor/image6.webp",
         "/assets/images/theinvestor/image7.webp"
-       ]
+      ]
     },
     {
       "id": "exmood",
-      "locked":"true",
+      "locked": "true",
       "title": "Designing Clarity: A Calm, Confident Presence for Smart Investors",
       "thumbnail": "assets/images/exmood/thumbnail.jpg",
-      "hover" : "/assets/images/exmood/mockup.png",
-      "about_project" : {
+      "hover": "/assets/images/exmood/mockup.png",
+      "about_project": {
         "company": "Exmood",
         "timeline": "Mar - Apr 2024",
         "scope": "UI/UX Design, Competition",
@@ -79,44 +79,40 @@
       },
       "overview": "EXMOOD is a mobile application designed to help users monitor their emotional well-being through mood tracking and journaling. The app focuses on offering a safe, private, and judgment-free experience — encouraging self-reflection without pressure.",
       "problem": "Mental health is becoming an increasingly relevant issue, especially among young adults. Many people experience anxiety, stress, or emotional instability, yet most feel uncomfortable discussing it with others — even professionals.",
-      "goals":[
-        "Deliver a calming, minimalist UI design",
-        ""
-
+      "goals": [
+        "Deliver a calming, minimalist UI design"
       ]
-
     },
     {
       "id": "greenprobolinggo",
-      "locked":"false",
+      "locked": "false",
       "title": "Building a Comprehensive Trash Bank Dashboard with Features for Both Customers and Admins",
       "thumbnail": "/assets/images/greenprobolinggo/trash.jpg",
-      "hover" : "/assets/images/greenprobolinggo/mockup.png",
-      "about_project" : {
+      "hover": "/assets/images/greenprobolinggo/mockup.png",
+      "about_project": {
         "company": "Green Probolinggo",
         "timeline": "Dec 2024 -Feb 2025",
         "scope": "UI/UX Design, Website Development",
         "role": "UI/UX Designer, Front End Developer",
         "cover": "/assets/images/greenprobolinggo/01.webp",
-        "url": "http://202.10.44.156/"
+        "url": "http://greenprobo.cloud/"
       },
-      "about_company": "Greenprobo is a waste bank based in Probolinggo, involving individuals, institutions, and schools in waste management and recycling efforts. Through this initiative, Greenprobo aims to encourage communities and organizations to actively engage in sustainable waste management while offering financial rewards for those participating in recycling activities.",
-      "challenge": "Greenprobo faced the challenge of creating a user-friendly dashboard with clear role-based access for both customers and admins. Customers needed the ability to view their transaction history, calculate potential earnings from waste, and request withdrawals transparently. Meanwhile, admins needed a system that would efficiently manage customer data and waste transactions in real time. A solution was required that was not only intuitive but also secure for handling sensitive financial data.",
-      "goals":[
-        "Design a clear and intuitive dashboard for both customers and admins",
-        "Provide a waste earnings simulation feature for customers",
-        "Deliver a transparent and efficient user experience",
-        "Ensure admins can easily manage customer data, waste transactions, and withdrawal requests"
-        ],
-      "solution": "For customers, I designed an interface that makes it easy for them to view transaction history, simulate earnings from waste, and access the fund withdrawal feature. The incoming and outgoing transactions were also made intuitive to help customers monitor their financial status effortlessly.\n For admins, I created a control panel that simplifies the CRUD process for managing customer data and waste transactions. The system for handling fund withdrawals was also designed with high efficiency, allowing admins to quickly verify and process requests securely. This system’s design emphasizes simplicity and clarity, ensuring that both customers and admins can interact smoothly with the platform.",
-       "visual":[
+      "about_company": "Greenprobo is a waste bank operating in Probolinggo City. This initiative aims to manage waste more effectively and provide added value to the participating community.",
+      "challenge": "Greenprobo required a digital system capable of addressing several key challenges. Admins needed ease in the input process and comprehensive monitoring of waste bank data. On the customer side, an intuitive platform was needed to access transaction history, withdraw savings, and estimate income from the waste they would deposit. Furthermore, the system had to ensure secure and transparent data management for both parties.",
+      "goals": [
+        "Simplify Data Management for Admins",
+        "Enhance Customer Accessibility and Services",
+        "Create a Transparent and Efficient Platform"
+      ],
+      "solution": "To address these challenges, a Greenprobo digital dashboard was developed with a focus on ease of use and relevant functionality for both admins and customers.\nFor customers, an intuitive interface was designed to make it easy for them to view detailed transaction histories of waste deposits and savings withdrawals. A key feature provided is the income simulation, allowing customers to estimate potential earnings from the waste they plan to deposit. The fund withdrawal process was also made simple and transparent.\nFor admins, the dashboard provides a comprehensive control panel for managing customer data and waste transactions (CRUD - Create, Read, Update, Delete). This system allows admins to monitor waste bank activities in real-time, efficiently manage fund withdrawal requests from customers, and ensure data accuracy and security. The system's design emphasizes a clear and simple workflow so that admins can interact with the platform smoothly and effectively.",
+      "visual": [
         "/assets/images/greenprobolinggo/01.webp",
         "/assets/images/greenprobolinggo/06.webp",
         "/assets/images/greenprobolinggo/05.webp",
         "/assets/images/greenprobolinggo/04.webp",
         "/assets/images/greenprobolinggo/02.webp",
         "/assets/images/greenprobolinggo/03.webp"
-       ]
+      ]
     }
   ]
 }
