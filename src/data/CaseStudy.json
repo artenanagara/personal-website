@@ -14,14 +14,15 @@
         "cover": "/assets/images/manisgrafika/cover.webp",
         "url": "https://manisgrafika.id"
       },
-      "about_company": "Manis Grafika is a professional book publisher and printing service based in Solo, Indonesia, specializing in religious books such as Yasin and Tahlil. They are known for producing high-quality, aesthetically pleasing prayer books using premium materials.",
-      "challenge": "Manis Grafika initially had a static and outdated landing page that failed to represent the premium quality of their products. Even though they actively sold on Shopee, Tokopedia, and promoted via Instagram and Facebook, the existing website did not support or reflect their brand’s luxurious image.",
+      "about_company": "Manis Grafika is a professional publisher and printing service from Solo, renowned for crafting premium religious books, particularly Yasin, Tahlil, and Majmu Syarif. Known for its meticulous print quality, use of high-grade materials, and aesthetic designs, Manis Grafika serves a clientele that prioritizes beauty and quality in every detail of their custom orders.",
+      "challenge": "Manis Grafika's primary challenge was to translate the superior quality of their physical products—which can be experienced through touch and direct viewing—into a digital platform. Prior to this website, potential customers could not see specific details like cover types, paper quality, or sample page designs online. This created a gap between their brand's quality perception and its digital experience, while also limiting their market reach, which previously relied heavily on offline or word-of-mouth orders.",
       "goals": [
         "Redesign the website to make it look more luxurious and elegant, aligning with the product’s character.",
         "Present a digital catalog that is minimalist, clean, and easy to browse.",
+        "Simplify the Ordering Flow",
         "Enhance brand credibility through a more professional digital appearance."
       ],
-      "solution": "To address the problem, I conducted visual research on several luxury brands including Bottega Veneta, Burberry, Chanel, Chloé, and Christian Dior. These websites typically use clean white backgrounds, minimalist layouts, and focus heavily on high-quality product imagery. \n Inspired by these elements, I redesigned Manis Grafika’s website to be clean, elegant, and product-centric. The main highlight of the new design is large product photos that emphasize the premium feel of their offerings.",
+      "solution": "The implemented solution was a website developed with a focus on minimalist aesthetics and targeted functionality. The web design emphasizes white space and elegant typography to highlight the high-quality product photography. Each product is presented on its own detail page, featuring a visual gallery and comprehensive technical specifications in a clean layout. The user flow is simplified with intuitive call-to-action buttons, effectively guiding customers toward a personal, consultation-based ordering process. This approach successfully created a digital platform that is premium, functional, and aligned with Manis Grafika's brand image.",
       "visual": [
         "/assets/images/manisgrafika/image1.webp",
         "/assets/images/manisgrafika/image2.webp",
@@ -45,14 +46,14 @@
         "cover": "/assets/images/theinvestor/cover.png",
         "url": "https://theinvestor.id"
       },
-      "about_company": "The Investor is an educational platform that helps people grow their wealth with confidence through the right investment strategies. It offers accessible learning programs, articles, a Discord community, and a YouTube channel — available anytime and anywhere.",
-      "challenge": "The Investor wanted to create a digital presence that feels professional yet youthful and easy to navigate. The main challenge was to spotlight the free ebook as a key conversion tool and organize the learning programs and resources in a way that encourages exploration. At the same time, the design needed to reflect a modern and trustworthy brand identity that appeals to younger audiences.",
+      "about_company": "The Investor is an Indonesian financial education platform founded to help retail investors master the 'value investing' strategy. With its core philosophy of 'Tumbuh dengan Tenang' (Grow Calmly), the platform aims to present a logical, long-term stock investment method away from market noise. The Investor provides various digital products, from online courses and e-books to a community group, to guide investors at every step of their investment journey.",
+      "challenge": "In a market saturated with speculative information, The Investor's primary challenge was to build trust. They utilized a 'free ebook' as the main gateway to attract potential customers. The challenge lay in positioning this free ebook not as a low-value gimmick, but as an initial proof of the quality and analytical depth they offer. The platform had to convince users to exchange their data (email) for the ebook, and then prove its value to overcome market skepticism and convert free readers into premium program clients.",
       "goals": [
-        "Feature the free ebook prominently to drive user engagement",
-        "Display programs and learning resources in a structured and appealing layout.",
+        "Build authority as a 'value investing' education platform.",
+        "Create an integrated learning ecosystem.",
         "Align the website’s visual style with the brand’s friendly and modern tone."
       ],
-      "solution": "To create a focused and engaging user journey, I placed the free ebook at the top of the homepage in the hero section, ensuring it grabs immediate attention. The visual design was kept clean and brand-consistent, with intuitive layouts for the programs, articles, Discord, and YouTube sections. Although the design is not yet responsive, the desktop version provides a strong first impression and effectively communicates the platform’s value and offerings.",
+      "solution": "The implemented solution was to build a website centered on a user acquisition strategy through the 'free ebook'. The entire design and user flow were optimized to highlight the ebook offer as the most valuable first step. The homepage strategically features social proof and the ebook's key benefits to encourage downloads. Once a user acquires the ebook, they are entered into a planned ecosystem via email nurturing and community invitations. The platform acts not just as a 'door' to the ebook, but as a bridge that consistently proves the value of The Investor's teachings, thereby effectively building the trust required to upsell premium programs.",
       "visual": [
         "/assets/images/theinvestor/image1.webp",
         "/assets/images/theinvestor/image2.webp",
@@ -86,7 +87,7 @@
     {
       "id": "greenprobolinggo",
       "locked": "false",
-      "title": "Building a Comprehensive Trash Bank Dashboard with Features for Both Customers and Admins",
+      "title": "Designing a Transparent Dashboard for Greenprobolinggo",
       "thumbnail": "/assets/images/greenprobolinggo/trash.jpg",
       "hover": "/assets/images/greenprobolinggo/mockup.png",
       "about_project": {
@@ -97,14 +98,14 @@
         "cover": "/assets/images/greenprobolinggo/01.webp",
         "url": "http://greenprobo.cloud/"
       },
-      "about_company": "Greenprobo is a waste bank operating in Probolinggo City. This initiative aims to manage waste more effectively and provide added value to the participating community.",
-      "challenge": "Greenprobo required a digital system capable of addressing several key challenges. Admins needed ease in the input process and comprehensive monitoring of waste bank data. On the customer side, an intuitive platform was needed to access transaction history, withdraw savings, and estimate income from the waste they would deposit. Furthermore, the system had to ensure secure and transparent data management for both parties.",
+      "about_company": "Greenprobolinggo is an initiative directly managed by the Probolinggo City Government with the primary goal of managing waste more effectively through a waste bank system. The program is designed to encourage active community participation in sorting waste at home, which ultimately contributes to reducing the volume of waste in landfills while providing additional economic value for recyclable materials.",
+      "challenge": "Currently, the entire operation of Greenprobolinggo relies on manual processes, from transaction recording and customer management to financial reporting using physical ledgers or simple spreadsheets. This reliance on manual methods poses several significant challenges, such as process inefficiency that consumes considerable time and a high risk of human error. Furthermore, customers face difficulties in transparently monitoring their balances and deposit histories in real-time, and they must physically visit the location just to obtain basic information. For administrators, the process of analyzing overall data for program evaluation becomes highly complex and ineffective.",
       "goals": [
-        "Simplify Data Management for Admins",
-        "Enhance Customer Accessibility and Services",
+        "Improve Operational Efficiency",
+        "Create Transparency and Trust",
         "Create a Transparent and Efficient Platform"
       ],
-      "solution": "To address these challenges, a Greenprobo digital dashboard was developed with a focus on ease of use and relevant functionality for both admins and customers.\nFor customers, an intuitive interface was designed to make it easy for them to view detailed transaction histories of waste deposits and savings withdrawals. A key feature provided is the income simulation, allowing customers to estimate potential earnings from the waste they plan to deposit. The fund withdrawal process was also made simple and transparent.\nFor admins, the dashboard provides a comprehensive control panel for managing customer data and waste transactions (CRUD - Create, Read, Update, Delete). This system allows admins to monitor waste bank activities in real-time, efficiently manage fund withdrawal requests from customers, and ensure data accuracy and security. The system's design emphasizes a clear and simple workflow so that admins can interact with the platform smoothly and effectively.",
+      "solution": "As a solution, we propose the development of a comprehensive web-based digital dashboard platform. This platform will feature two main, integrated interfaces: an Admin Dashboard and a Customer Dashboard. The Admin Dashboard will serve as the operational control center, equipped with features for transaction management (record, edit, delete), customer data management, and a financial module to track income, expenses, and process withdrawal requests. This dashboard will also present visual reports and analytics on deposit trends and the financial health of the waste bank. On the other hand, the Customer Dashboard will empower users by providing direct access to their account summaries, transaction histories, and a feature to submit withdrawal requests online. To further boost participation, a Waste Calculator will be included as an interactive simulation tool for customers to estimate their potential earnings from the waste they deposit.",
       "visual": [
         "/assets/images/greenprobolinggo/01.webp",
         "/assets/images/greenprobolinggo/06.webp",
