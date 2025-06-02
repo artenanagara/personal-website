@@ -27,8 +27,8 @@ const AvailabilityBadge: React.FC<AvailabilityBadgeProps> = ({ location }) => {
 
   return (
     <div className="flex items-center space-x-2 text-sm pr-16 font-medium">
-      <a href='mailto:artenanagara22@gmail.com' className="text-red-500 font-semibold hover:text-[#FFEB00] hover:-translate-x-2  hover:scale-110 transition duration-700 ease-in-out ">
-      {`Limited Time ${currentMonthYear}`}
+      <a href='mailto:artenanagara22@gmail.com' className="text-green-500 font-semibold hover:text-[#FFEB00] hover:-translate-x-2  hover:text-black transition duration-700 ease-in-out ">
+      {`Available ${currentMonthYear}`}
       </a>
       <span className="text-gray-500">–</span>
       <span className="text-gray-700">{location}</span>
