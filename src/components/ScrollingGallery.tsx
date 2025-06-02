@@ -1,7 +1,7 @@
-// artenanagara/personal-website/personal-website-90a1bbd45254bc0a4b1bf95149eb8f1d7851424b/src/components/ScrollingGallery.tsx
-import React, { useEffect, useRef, useState } from 'react'; // Tambahkan useState
-import { motion, useMotionValue, animate } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useMotionValue, animate, AnimationControls } from 'framer-motion';
 
+// Tidak ada perubahan pada data gambar
 const images = [
   {
     src: 'https://cdn.dribbble.com/userupload/15354141/file/original-d91d339d1fb58c2ecf15be404fae0516.png?resize=1024x768&vertical=center',
@@ -28,103 +28,89 @@ const images = [
 const ScrollingGallery = () => {
   const x = useMotionValue(0);
   const galleryRef = useRef<HTMLDivElement>(null);
-  const [duplicatedImages, setDuplicatedImages] = useState([...images, ...images]);
-  const [currentAnimation, setCurrentAnimation] = useState<{ stop: () => void } | null>(null);
 
-  // Jika Anda ingin pause on hover, Anda memerlukan state untuk itu
+  // Duplikasi gambar untuk loop yang mulus
+  const [duplicatedImages] = useState([...images, ...images]);
+  const [animation, setAnimation] = useState<AnimationControls | null>(null);
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    // Update duplikasi gambar jika array 'images' berubah (jarang terjadi untuk konstanta)
-    setDuplicatedImages([...images, ...images]);
-  }, [images]);
-
-
-  useEffect(() => {
     const galleryElement = galleryRef.current;
-    if (!galleryElement || duplicatedImages.length === 0) {
-      // Hentikan animasi sebelumnya jika ada
-      currentAnimation?.stop();
-      setCurrentAnimation(null);
-      return;
-    }
+    if (!galleryElement) return;
 
-    // Hitung lebar total dari SEMUA item (termasuk gap jika ada)
-    // galleryElement.scrollWidth adalah cara yang baik untuk mendapatkan lebar konten internal flex
-    const totalContentWidth = galleryElement.scrollWidth;
-    const singleSetWidth = totalContentWidth / 2; // Karena kita menduplikasi konten
+    // Logika utama animasi
+    const startAnimation = () => {
+      // Hitung lebar total dari konten di dalam flexbox
+      const totalContentWidth = galleryElement.scrollWidth;
+      // Lebar dari satu set gambar adalah setengah dari total
+      const singleSetWidth = totalContentWidth / 2;
 
-    if (singleSetWidth === 0) return; // Jangan mulai animasi jika lebarnya nol
+      // GUARD: Jangan jalankan animasi jika lebar belum terhitung (masalah umum saat deploy)
+      if (singleSetWidth === 0) {
+        console.warn("Gallery width is 0, animation delayed.");
+        // Coba lagi setelah penundaan singkat untuk memberi waktu browser menghitung layout
+        setTimeout(startAnimation, 100); 
+        return;
+      }
 
-    // Hentikan animasi sebelumnya sebelum memulai yang baru
-    currentAnimation?.stop();
-
-    const animation = animate(x, -singleSetWidth, {
-      duration: 20, // Sesuaikan durasi (misalnya 20 detik untuk satu siklus)
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "loop",
-      // onRepeat akan dipanggil setiap kali animasi selesai satu siklus dan akan diulang
-      // onUpdate: (latest) => {
-      //   console.log("x is", latest);
-      // }
-    });
-
-    setCurrentAnimation(animation);
-
-    return () => {
-      animation.stop();
-      setCurrentAnimation(null);
+      const anim = animate(x, [-singleSetWidth, 0], {
+        duration: 30, // Durasi bisa disesuaikan, lebih lambat lebih baik
+        ease: "linear",
+        repeat: Infinity,
+      });
+      setAnimation(anim);
     };
-    // Dependency array:
-    // - x: Nilai motion value
-    // - duplicatedImages.length: Untuk merestart animasi jika jumlah gambar berubah
-    // - isHovering: Jika Anda mengimplementasikan pause on hover
-  }, [x, duplicatedImages.length, isHovering]); // Tambahkan isHovering jika digunakan
+    
+    startAnimation();
 
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-    currentAnimation?.stop(); // Hentikan animasi saat hover
-  };
+    // Cleanup function untuk menghentikan animasi saat komponen di-unmount
+    return () => {
+      animation?.stop();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // <-- Jalankan useEffect ini hanya sekali saat komponen pertama kali mount
 
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-    // Animasi akan otomatis dimulai ulang oleh useEffect karena isHovering berubah
-    // dan useEffect akan menjalankan ulang logikanya.
-  };
+  // Efek terpisah untuk menangani pause/resume saat hover
+  useEffect(() => {
+    if (isHovering) {
+      animation?.pause();
+    } else {
+      animation?.play();
+    }
+  }, [isHovering, animation]);
+
 
   return (
     <div
-      className='w-full md:h-screen flex flex-col gap-8 pb-16 pt-20'
+      className='w-full md:h-screen flex flex-col gap-8 pb-16 pt-20 overflow-hidden' // Tambahkan overflow-hidden di sini
       data-aos="fade-up"
       data-aos-duration="1000"
     >
       <h2 className='text-4xl md:text-6xl'>another exploration</h2>
-      <div className="overflow-hidden relative w-full">
+      <div 
+        className="relative w-full"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         <motion.div
           ref={galleryRef}
-          className="flex cursor-pointer" 
+          className="flex cursor-pointer gap-8" // PERBAIKAN: Gunakan 'gap' untuk spasi, lebih robust
           style={{ x }}
-          onMouseEnter={handleMouseEnter} 
-          onMouseLeave={handleMouseLeave} 
         >
           {duplicatedImages.map((image, index) => (
             <a
               key={index}
-              className='flex-shrink-0'
-              style={{
-                width: `calc(${100 / 2}% - 16px)`,
-                paddingRight: index < duplicatedImages.length -1 ? '32px' : '0px'
-              }}
+              // PERBAIKAN: Gunakan lebar yang lebih fleksibel dan pastikan item tidak menyusut
+              className='flex-shrink-0 w-[45vw] md:w-[40vw]' 
               href={image.url}
               target='_blank'
               rel='noopener noreferrer'
             >
               <motion.img
                 src={image.src}
-                alt={`Gallery ${index}`}
-                className="w-full h-auto object-cover" // h-auto untuk menjaga rasio aspek
-                whileHover={{ scale: 1.05 }}
+                alt={`Gallery image ${index + 2}`}
+                className="w-full h-auto object-cover" // h-auto menjaga rasio aspek
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               />
             </a>
           ))}
