@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { motion, useMotionValue, animate, AnimationControls } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { motion, useMotionValue, animate, AnimationPlaybackControls } from 'framer-motion';
 
 // Tidak ada perubahan pada data gambar
 const images = [
@@ -31,7 +31,7 @@ const ScrollingGallery = () => {
 
   // Duplikasi gambar untuk loop yang mulus
   const [duplicatedImages] = useState([...images, ...images]);
-  const [animation, setAnimation] = useState<AnimationControls | null>(null);
+  const [animation, setAnimation] = useState<AnimationPlaybackControls | null>(null);
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
